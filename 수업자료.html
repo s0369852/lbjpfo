@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /* wrapper 사용 */
+        .warpper {max-width: 1280px;margin-right: auto;margin-left: auto;}
+
+        /* flex CSS */
+        ul {display: flex;justify-content: space-around}
+        
+        /* 
+            float CSS 
+        */
+        ul> li {float: left;width: 20%;text-align: center;}
+        
+        /* 가상선택자 사용 */
+        ul:after {content: '';display: block;overflow: hidden;clear: both;}
+        
+        /* overflow:hidden 사용 */
+        ul {overflow: hidden;position: relative;}
+
+        /* display: inline-block 사용 */
+        ul {display: inline-block;}
+
+        /* div 사용 */
+        .clear {clear: both;}
+        
+    
+    </style>
+</head>
+<body>
+    <div id="site">
+        <header>
+            <div class="warpper">
+                <h1>사이트</h1>
+                <nav id="gnb">
+                    <ul>
+                        <li>메뉴1</li>
+                        <li>메뉴1</li>
+                        <li>메뉴1</li>
+                        <li>메뉴1</li>
+                        <li>메뉴1</li>
+                        <!-- <div class="clear"></div> -->
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <div class="wrapper">
+                <div class="contents1">
+                    <div class="contents1_context">
+                        내용1-1
+                    </div>
+                    <div class="contents1_context">
+                        내용1-2
+                    </div>
+                    <div class="contents1_context">
+                        내용1-3
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="wrapper">
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
