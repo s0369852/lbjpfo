@@ -1,63 +1,232 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Document</title>
-</head>
-<body>
-<!--    header#hd>(h1#title)+(ul#gnb>li*4)+div#logbox(span*2>i)-->
-    <header id="hd">
-        <h1 id="logo"><a href=""><img src="" alt=""></a></h1>
-        <ul id="gnb">
-            <li>발매정보</li>
-            <li>커뮤니티</li>
-            <li>KICKS</li>
-            <li><span><i></i></span>검색</li>
-        </ul>
-        <div id="logbox"><span><i>로그인</i></span><span><i>마이페이지</i></span></div>
-    </header>
-   
-<!--    section>#youtube>iframe -->
-    <section>
-        <div id="youtube"><iframe src="" frameborder="0"></iframe></div>
-    </section>
-    
-<!--    #sns>a*5>img-->
-    <div id="sns">
-        <a href=""><img src="" alt=""></a>
-        <a href=""><img src="" alt=""></a>
-        <a href=""><img src="" alt=""></a>
-        <a href=""><img src="" alt=""></a>
-        <a href=""><img src="" alt=""></a>
-    </div>
-    
-<!--    section#Mbnr>.wrap>(h1.title)+(ul.img1>li*4(h3+a>img))+button{+더보기}-->
-    <section id="Mbnr">
-        <div class="wrap">
-            <h1 class="title">#KICKS OF THE DAY</h1>
-            <ul id="img">
-                <li>
-                    <h3>기사1</h3>
-                    <a href=""><img src="" alt=""></a>
-                </li>
-                <li>
-                    <h3>기사2</h3>
-                    <a href=""><img src="" alt=""></a>
-                </li>
-                <li>
-                    <h3>기사3</h3>
-                    <a href=""><img src="" alt=""></a>
-                </li>
-                <li>
-                    <h3>기사4</h3>
-                    <a href=""><img src="" alt=""></a>
-                </li>
-            </ul>
-            <button>+더보기</button>
+    <head>
+        <title>KREAM</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-type" content="text/html" ; charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1" />
+
+        <link rel="stylesheet" href="" />
+    </head>
+    <body>
+        <!--    header#hd>(h1#title)+(ul#gnb>li*4)+div#logbox(span*2>i)-->
+        <header id="hd">
+            <div class="wrapper">
+                <h1 id="logo">
+                    <a href="">KREAM<img src="" alt="" /></a>
+                </h1>
+                <nav id="gnb">
+                    <ul>
+                        <li>발매정보</li>
+                        <li>커뮤니티</li>
+                        <li>KICKS</li>
+                        <li>
+                            <span><i></i></span>검색
+                        </li>
+                    </ul>
+                </nav>
+                <div id="logbox">
+                    <span><i>로그인</i></span
+                    ><span><i>마이페이지</i></span>
+                </div>
+            </div>
+        </header>
+
+        <!--    section>#youtube>iframe -->
+        <section>
+            <div id="youtube"><iframe src="" frameborder="0"></iframe></div>
+        </section>
+
+        <!--    #sns>a*5>img-->
+        <div id="sns">
+            <a href=""><img src="" alt="" />youtube</a>
+            <a href=""><img src="" alt="" />instagram</a>
+            <a href=""><img src="" alt="" />facebook</a>
+            <a href=""><img src="" alt="" />Kickicks</a>
+            <a href=""><img src="" alt="" />top</a>
         </div>
-    </section>
-    
-    section#Pdt>.Wrap>.Twrap(h1.title+a.show)+
-    
-</body>
+
+        <!--    section#Mbnr>.wrap>(h1.title)+(ul.img1>li*4(h3+a>img))+button{+더보기}-->
+        <section id="Mbnr">
+            <div class="container">
+                <h1 class="title">#KICKS OF THE DAY</h1>
+                <ul id="article">
+                    <li>
+                        <h3>기사1</h3>
+                        <span>기사1 부제</span>
+                        <a href=""><img src="" alt="" /></a>
+                    </li>
+                    <li>
+                        <h3>기사2</h3>
+                        <span>기사2 부제</span>
+                        <a href=""><img src="" alt="" /></a>
+                    </li>
+                    <li>
+                        <h3>기사3</h3>
+                        <a href=""><img src="" alt="" /></a>
+                    </li>
+                    <li>
+                        <h3>기사4</h3>
+                        <a href=""><img src="" alt="" /></a>
+                    </li>
+                </ul>
+                <button>+더보기</button>
+            </div>
+        </section>
+
+        <!-- section#Pdt>.container>(.Twrap>h1.title+a.)+ul>li#pdt$*3>a>img+img+em+strong -->
+        <section id="Pdt">
+            <div class="container">
+                <div class="Twrap">
+                    <h1 class="title">Most Popular</h1>
+                    <a href="" class="">+전체보기</a>
+                </div>
+                <ul>
+                    <li id="pdt1">
+                        <a href="">
+                            <img src="" alt="" />
+                            <img src="" alt="" />
+                            <em>상품이름</em>
+                            <strong>상품가격</strong>
+                        </a>
+                    </li>
+                    <li id="pdt2">
+                        <a href="">
+                            <img src="" alt="" />
+                            <img src="" alt="" />
+                            <em>상품이름</em>
+                            <strong>상품가격</strong>
+                        </a>
+                    </li>
+                    <li id="pdt3">
+                        <a href="">
+                            <img src="" alt="" />
+                            <img src="" alt="" />
+                            <em>상품이름</em>
+                            <strong>상품가격</strong>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- section#Pdtslide>.contariner>img -->
+        <section id="Pdtslide">
+            <div class="contariner"><img src="" alt="" /></div>
+        </section>
+
+        <!-- section#Updt>.container>(.Twrap>h1.title+a.)+ul>li#updt$*4>a>img+img+em+strong -->
+        <section id="Updt">
+            <div class="container">
+                <div class="Twrap">
+                    <h1 class="title">Upcoming Release</h1>
+                    <a href="" class="">+전체보기</a>
+                </div>
+                <ul>
+                    <li id="updt1">
+                        <a href="">
+                            <img src="" alt="" />
+                            <img src="" alt="" />
+                            <em>상품이름</em>
+                            <strong>발매날짜</strong>
+                        </a>
+                    </li>
+                    <li id="updt2">
+                        <a href="">
+                            <img src="" alt="" />
+                            <img src="" alt="" />
+                            <em>상품이름</em>
+                            <strong>발매날짜</strong>
+                        </a>
+                    </li>
+                    <li id="updt3">
+                        <a href="">
+                            <img src="" alt="" />
+                            <img src="" alt="" />
+                            <em>상품이름</em>
+                            <strong>발매날짜</strong>
+                        </a>
+                    </li>
+                    <li id="updt4">
+                        <a href="">
+                            <img src="" alt="" />
+                            <img src="" alt="" />
+                            <em>상품이름</em>
+                            <strong>발매날짜</strong>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- section#Sslide>.contariner>img -->
+        <section id="Sslide">
+            <div class="contariner"><img src="" alt="" /></div>
+        </section>
+
+        <!-- footer#footer>.container>(nav>ul.footer-navigator>li*4>a)+address.content((.kream>h5+p*2)+(.cs>h5+p*2)+p)+.copyright -->
+        <footer id="footer">
+            <div class="container">
+                <nav>
+                    <ul class="footer-navigator">
+                        <li>
+                            <a href="">공지사항</a>
+                        </li>
+                        <li>
+                            <a href="">쇼룸안내</a>
+                        </li>
+                        <li>
+                            <a href="">검수기준</a>
+                        </li>
+                        <li>
+                            <a href="">자주 묻는 질문</a>
+                        </li>
+                    </ul>
+                </nav>
+                <address class="content">
+                    <div class="kream">
+                        <h5>KREAM</h5>
+                        <p>
+                            <span>(주)스노우</span>
+                            <em>|</em>
+                            <span>사업자번호: 786-87-00371</span>
+                            <em>|</em>
+                            <span>대표: 김창욱</span>
+                            <br />
+                            <span>통신판매업: 제 2018-성남분당B-0023호</span>
+                        </p>
+                        <p>
+                            <span>사업장소재지: 경기도 성남시 분당구 분당내곡로 117, 크래프트론 타워8층</span>
+                            <br />
+                            <span>호스팅 서비스: (주)네이버 비즈니스플랫폼</span>
+                        </p>
+                    </div>
+                    <div class="cs">
+                        <h5>고객센터</h5>
+                        <p>
+                            <span>대표전화: 1588-7813</span>
+                            <em>|</em>
+                            <span>평일 11시 - 18시</span>
+                            <em>|</em>
+                            <span>점심 12시 - 13시</span>
+                        </p>
+                        <p>
+                            <span>이메일: help@kream.co.kr</span>
+                            <em>|</em>
+                            <span>평일 11시 - 18시</span>
+                        </p>
+                    </div>
+                    <p>
+                        <span
+                            >(주)스노우는 통신판매 중개자로서 통신판매의 당사자가 아니므로 개별 판매자가 등록한 상품정보에 대해서 책임을
+                            지지 않습니다.</span
+                        >
+                        <br />
+                        <span>단, 거래과정에서 검수하고 보증하는 내용에 대한 책임은 당사에 있습니다.</span>
+                    </p>
+                </address>
+                <div class="copyright">© 2020 Snow Corp.v</div>
+            </div>
+        </footer>
+    </body>
 </html>
