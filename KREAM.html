@@ -2,75 +2,192 @@
 <html lang="en">
     <head>
         <title>KREAM</title>
+        <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta http-equiv="Content-type" content="text/html" ; charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css" />
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
         <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/main.css" />
+
+        <script
+            src="https://code.jquery.com/jquery-2.2.4.js"
+            integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+            crossorigin="anonymous"
+        ></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script src="js/main.js"></script>
     </head>
     <body>
         <!--    header#hd>(h1#title)+(ul#gnb>li*4)+div#logbox(span*2>i)-->
         <header id="hd">
-            <div class="wrapper">
-                <h1 id="logo">
-                    <a href="">KREAM<img src="" alt="" /></a>
-                </h1>
-                <nav id="gnb">
-                    <ul>
-                        <li>발매정보</li>
-                        <li>커뮤니티</li>
-                        <li>KICKS</li>
+            <nav class="navbar">
+                <div class="wrapper">
+                    <h1 class="navbar_logo">
+                        <a href="#">
+                            <strong>KREAM</strong>
+                            <span>KICKS RULE EVERYTHING AROUND ME</span>
+                        </a>
+                    </h1>
+                </div>
+                <div class="wrapper">
+                    <ul class="navbar_gnb">
                         <li>
-                            <span><i></i></span>검색
+                            <a href="#">
+                                <span>발매정보</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>커뮤니티</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>KICKS</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="xi-search"></i>
+                                <span>검색</span>
+                            </a>
+                        </li>    
+                    </ul>
+                </div>
+                <div class="wrapper">
+                    <ul class="navbar_logbox">
+                        <li>
+                            <span><i class="xi-log-in"></i></span>
+                        </li>
+                        <li>
+                            <span><i class="xi-user-o"></i></span>
                         </li>
                     </ul>
-                </nav>
-                <div id="logbox">
-                    <span><i>로그인</i></span
-                    ><span><i>마이페이지</i></span>
                 </div>
-            </div>
+                <!-- <a href="#" class="Hbtn">
+                    <i class="xi-bars"></i>
+                </a> -->
+                <div class="wrapper">
+                    <a href="#">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </a>
+                </div>
+            </nav>
         </header>
 
         <!--    section>#youtube>iframe -->
         <section>
-            <div id="youtube"><iframe src="" frameborder="0"></iframe></div>
+            <div id="wrap">
+                <iframe id="youtube" src="" frameborder="0"></iframe>
+            </div>
         </section>
 
         <!--    #sns>a*5>img-->
-        <div id="sns">
-            <a href=""><img src="" alt="" />youtube</a>
-            <a href=""><img src="" alt="" />instagram</a>
-            <a href=""><img src="" alt="" />facebook</a>
-            <a href=""><img src="" alt="" />Kickicks</a>
-            <a href=""><img src="" alt="" />top</a>
+        <div>
+            <a href="">
+                <i class="xi-youtube"></i>
+            </a>
         </div>
+        <div>    
+            <a href="">
+                <i class="xi-instagram"></i>
+            </a>
+        </div>
+        <div>
+            <a href="">
+                <i class="xi-facebook"></i>
+            </a>
+        </div>
+        <div>
+            <a href="">
+                <i class="xi-kickstarter"></i>
+            </a>
+        </div>
+        <div>
+            <a href="">
+                <i class="xi-arrow-top"></i>
+            </a>
+        </div>
+        
 
         <!--    section#Mbnr>.wrap>(h1.title)+(ul.img1>li*4(h3+a>img))+button{+더보기}-->
         <section id="Mbnr">
-            <div class="container">
-                <h1 class="title">#KICKS OF THE DAY</h1>
-                <ul id="article">
-                    <li>
-                        <h3>기사1</h3>
-                        <span>기사1 부제</span>
-                        <a href=""><img src="" alt="" /></a>
+            <!-- <div class="container">
+                <div class="wrapper">
+                    <h1 class="title"></h1>
+                    <div class="row">
+                        <div class="col-6">
+                            
+                            <img src="" alt="">
+                            <ul>
+                                <li></li>
+                            </ul>
+                        </div>
+                        <div class="col-6"></div>
+                    </div>
+                </div> -->
+                <div class="wrapper">
+                    <h1 class="title">#KICKS OF THE DAY</h1>
+                </div>
+                <div class="wrapper">
+                    <ul id="article">
+                        <li>
+                            <div>
+                                <img src="" alt="">
+                                <h2>
+                                    <a href="">
+                                        <strong>기사1</strong>
+                                        <em>기사1 부제</em>
+                                    </a>
+                                </h2>
+                            </div>
+                        </li>
+                </div>
+                <div class="wrapper">
+                    <ul id="article">
+                        <li>
+                            <div>
+                                <img src="" alt="">
+                                <h2>
+                                    <a href="">
+                                        <strong>기사2</strong>
+                                        <em>기사2 부제</em>
+                                    </a>
+                                </h2>
+                            </div>
+                            <div>
+                                <img src="" alt="">
+                                <h3>기사3</h3>
+                                <a href=""></a>
+                            </div>
+                            <div>
+                                <img src="" alt="">
+                                <h3>기사4</h3>
+                                <a href=""></a>
+                            </div>
+                        </li>
+                    </ul> 
+                </div>
+                    <!-- <li>
+                        <div>
+                            <h3>기사3</h3>
+                            <a href=""></a>
+                        </div>
                     </li>
                     <li>
-                        <h3>기사2</h3>
-                        <span>기사2 부제</span>
-                        <a href=""><img src="" alt="" /></a>
+                        <div>
+                            <h3>기사4</h3>
+                            <a href=""></a>
+                        </div>
                     </li>
-                    <li>
-                        <h3>기사3</h3>
-                        <a href=""><img src="" alt="" /></a>
-                    </li>
-                    <li>
-                        <h3>기사4</h3>
-                        <a href=""><img src="" alt="" /></a>
-                    </li>
-                </ul>
-                <button>+더보기</button>
+                </ul> -->
+                <a href="#">
+                    <span>+더보기</span>
+                </a>
             </div>
         </section>
 
@@ -79,29 +196,31 @@
             <div class="container">
                 <div class="Twrap">
                     <h1 class="title">Most Popular</h1>
-                    <a href="" class="">+전체보기</a>
+                    <a href="" class="">
+                        <span>+전체보기</span>
+                    </a>
                 </div>
                 <ul>
                     <li id="pdt1">
                         <a href="">
-                            <img src="" alt="" />
-                            <img src="" alt="" />
+                            <div>상품이미지</div>
+                            <div>상품로고</div>
                             <em>상품이름</em>
                             <strong>상품가격</strong>
                         </a>
                     </li>
                     <li id="pdt2">
                         <a href="">
-                            <img src="" alt="" />
-                            <img src="" alt="" />
+                            <div>상품이미지</div>
+                            <div>상품로고</div>
                             <em>상품이름</em>
                             <strong>상품가격</strong>
                         </a>
                     </li>
                     <li id="pdt3">
                         <a href="">
-                            <img src="" alt="" />
-                            <img src="" alt="" />
+                            <div>상품이미지</div>
+                            <div>상품로고</div>
                             <em>상품이름</em>
                             <strong>상품가격</strong>
                         </a>
@@ -112,7 +231,22 @@
 
         <!-- section#Pdtslide>.contariner>img -->
         <section id="Pdtslide">
-            <div class="contariner"><img src="" alt="" /></div>
+            <div class="contariner">
+                <ul class="slideimg">
+                    <li>
+                        <h2>상품이름1</h2>
+                        <div>상품이미지</div>
+                    </li>
+                    <li>
+                        <h2>상품이름2</h2>
+                        <div>상품이미지</div>
+                    </li>
+                    <li>
+                        <h2>상품이름3</h2>
+                        <div>상품이미지</div>
+                    </li>
+                </ul>
+            </div>
         </section>
 
         <!-- section#Updt>.container>(.Twrap>h1.title+a.)+ul>li#updt$*4>a>img+img+em+strong -->
@@ -120,37 +254,39 @@
             <div class="container">
                 <div class="Twrap">
                     <h1 class="title">Upcoming Release</h1>
-                    <a href="" class="">+전체보기</a>
+                    <a href="" class="">
+                        <span>+전체보기</span>
+                    </a>
                 </div>
                 <ul>
                     <li id="updt1">
                         <a href="">
-                            <img src="" alt="" />
-                            <img src="" alt="" />
+                            <div>상품이미지</div>
+                            <div>상품로고</div>
                             <em>상품이름</em>
                             <strong>발매날짜</strong>
                         </a>
                     </li>
                     <li id="updt2">
                         <a href="">
-                            <img src="" alt="" />
-                            <img src="" alt="" />
+                            <div>상품이미지</div>
+                            <div>상품로고</div>
                             <em>상품이름</em>
                             <strong>발매날짜</strong>
                         </a>
                     </li>
                     <li id="updt3">
                         <a href="">
-                            <img src="" alt="" />
-                            <img src="" alt="" />
+                            <div>상품이미지</div>
+                            <div>상품로고</div>
                             <em>상품이름</em>
                             <strong>발매날짜</strong>
                         </a>
                     </li>
                     <li id="updt4">
                         <a href="">
-                            <img src="" alt="" />
-                            <img src="" alt="" />
+                            <div>상품이미지</div>
+                            <div>상품로고</div>
                             <em>상품이름</em>
                             <strong>발매날짜</strong>
                         </a>
@@ -160,8 +296,23 @@
         </section>
 
         <!-- section#Sslide>.contariner>img -->
-        <section id="Sslide">
-            <div class="contariner"><img src="" alt="" /></div>
+        <section id="Roomslide">
+            <div class="contariner">
+                <ul class="slideimg">
+                    <li>
+                        <h2>쇼룸이미지1</h2>
+                        <div>쇼룸이미지1</div>
+                    </li>
+                    <li>
+                        <h2>쇼룸이미지2</h2>
+                        <div>쇼룸이미지2</div>
+                    </li>
+                    <li>
+                        <h2>쇼룸이미지3</h2>
+                        <div>쇼룸이미지3</div>
+                    </li>
+                </ul>
+            </div>
         </section>
 
         <!-- footer#footer>.container>(nav>ul.footer-navigator>li*4>a)+address.content((.kream>h5+p*2)+(.cs>h5+p*2)+p)+.copyright -->
@@ -185,7 +336,7 @@
                 </nav>
                 <address class="content">
                     <div class="kream">
-                        <h5>KREAM</h5>
+                        <h4>KREAM</h4>
                         <p>
                             <span>(주)스노우</span>
                             <em>|</em>
@@ -202,7 +353,7 @@
                         </p>
                     </div>
                     <div class="cs">
-                        <h5>고객센터</h5>
+                        <h4>고객센터</h4>
                         <p>
                             <span>대표전화: 1588-7813</span>
                             <em>|</em>

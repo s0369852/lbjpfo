@@ -1,0 +1,129 @@
+@charset "UTF-8";
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+/* 헤더 */
+.navbar {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background: #000000;
+}
+
+/* 로고 */
+.navbar_logo {
+    padding: 28px 35px;
+    text-align: left;
+}
+.navbar_logo strong {
+    font-family: "Black Han Sans";
+    font-size: 2.5rem;
+    font-style: italic;
+    color: #fff8e7;
+}
+.navbar_logo span {
+    display: block;
+    font-family: "Bai Jamjuree";
+    font-weight: bold;
+    font-size: 0.2rem;
+    color: #fff8e7;
+}
+
+/* 메뉴 */
+.navbar_gnb {
+    display: flex;
+    padding-top: 30px;
+}
+
+.navbar_gnb li {
+    padding: 6px 16px;
+    margin: 0 12px;
+    border: 2px solid #333333;
+    border-radius: 12px;
+    text-align: center;
+    width: 100px;
+}
+
+.navbar_gnb li:hover {
+    background-color: #5d5d5d;
+}
+
+.navbar_gnb li a {
+    font-family: "Noto Sans KR", sans-serif;
+    color: #fff8e7;
+    font-size: 1rem;
+}
+
+/* 개인정보란 */
+.navbar_logbox {
+    display: flex;
+    padding: 30px 35px;
+}
+
+.navbar_logbox li {
+    padding: 0 15px;
+    font-size: 1.8rem;
+    color: #fff8e7;
+}
+
+.Hbtn {
+    display: none;
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    font-size: 2rem;
+    color: #fff8e7;
+}
+
+/* @media */
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar_gnb {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 0;
+        width: 100%;
+    }
+
+    .navbar_gnb li {
+        margin: 5px;
+        text-align: center;
+    }
+
+    .navbar_logbox {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .Hbtn {
+        display: block;
+    }
+
+    #sns {
+        display: none;
+    }
+}
+
+/* sns */
+#sns {
+    position: fixed;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+#sns a {
+    display: block;
+    padding: 15px;
+    color: #333333;
+}
