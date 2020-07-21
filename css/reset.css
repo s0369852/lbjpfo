@@ -88,7 +88,7 @@ video {
     padding: 0;
     border: 0;
     font-size: 100%;
-    vertical-align: baseline;
+    vertical-align: middle;
     line-height: 160%;
     box-sizing: border-box;
 }
@@ -172,7 +172,7 @@ caption {
 }
 a:link,
 a:visited {
-    color: #666;
+    color: #444;
     text-decoration: none;
 }
 a:active,

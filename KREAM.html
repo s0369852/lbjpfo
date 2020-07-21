@@ -7,20 +7,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" />
         <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
         <link rel="stylesheet" href="css/reset.css" />
         <link rel="stylesheet" href="css/main.css" />
 
-        <script
-            src="https://code.jquery.com/jquery-2.2.4.js"
-            integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
-            crossorigin="anonymous"
-        ></script>
+        <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
         <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
         <script src="js/main.js"></script>
     </head>
     <body>
-        <!--    header#hd>(h1#title)+(ul#gnb>li*4)+div#logbox(span*2>i)-->
         <header id="hd">
             <nav class="navbar">
                 <div class="navbar_logo">
@@ -53,7 +49,7 @@
                                 <i class="xi-search"></i>
                                 <span>검색</span>
                             </a>
-                        </li>    
+                        </li>
                     </ul>
                 </div>
                 <div class="navbar_logbox">
@@ -66,69 +62,65 @@
                         </li>
                     </ul>
                 </div>
-                <!-- <a href="#" class="Hbtn">
-                    <i class="xi-bars"></i>
-                </a> -->
-                <div class="wrapper">
+                <!-- <div class="wrapper">
                     <a href="#">
                         <span></span>
                         <span></span>
                         <span></span>
                     </a>
-                </div>
+                </div> -->
             </nav>
         </header>
 
-        <!--    section>#youtube>iframe -->
         <section id="Ebnr">
             <div class="wrapper">
                 <iframe id="youtube" src="" frameborder="0"></iframe>
             </div>
         </section>
 
-        <!--    #sns>a*5>img-->
         <div id="icon_set">
-        <div class="wrapper">
-            <div class="icon_youtube">
-            <a href="">
-                <i class="xi-youtube"></i>
-            </a>
+            <div class="wrapper">
+                <div class="icon_youtube">
+                    <a href="">
+                        <i class="xi-youtube"></i>
+                    </a>
+                </div>
+                <div class="icon_instagram">
+                    <a href="">
+                        <i class="xi-instagram"></i>
+                    </a>
+                </div>
+                <div class="icon_facebook">
+                    <a href="">
+                        <i class="xi-facebook"></i>
+                    </a>
+                </div>
+                <div class="icon_kickick">
+                    <a href="">
+                        <i class="xi-kickstarter"></i>
+                    </a>
+                </div>
+                <div class="icon_top">
+                    <a href="">
+                        <i class="xi-arrow-top"></i>
+                    </a>
+                </div>
             </div>
-            <div class="icon_instagram">    
-            <a href="">
-                <i class="xi-instagram"></i>
-            </a>
-            </div>
-            <div class="icon_facebook">
-            <a href="">
-                <i class="xi-facebook"></i>
-            </a>
-            </div>
-            <div class="icon_kickick">
-            <a href="">
-                <i class="xi-kickstarter"></i>
-            </a>
-            </div>
-            <div class="icon_top">
-            <a href="">
-                <i class="xi-arrow-top"></i>
-            </a>
-            </div>
-        </div>
         </div>
 
-        <!--    section#Mbnr>.wrap>(h1.title)+(ul.img1>li*4(h3+a>img))+button{+더보기}-->
         <section id="Mbnr">
             <div class="container">
                 <div class="wrapper">
                     <h2>#KICKS OF THE DAY</h2>
                     <div class="row">
                         <div class="col-4 article1">
-                            <img src="" alt="">
+                            <img src="" alt="" />
                             <ul class="article_list">
                                 <li>
-                                    <h3>Lorem ipsum <br>
-                                        dolor sit amet</h3>
+                                    <h3>
+                                        Lorem ipsum <br />
+                                        dolor sit amet
+                                    </h3>
                                 </li>
                                 <li>
                                     <p>INTEGER FRINGILLA DOLOR VOLUTPAT MI SEMPER</p>
@@ -138,7 +130,7 @@
                         <div class="col-8">
                             <div class="row">
                                 <div class="col-8 article2">
-                                    <img src="" alt="">
+                                    <img src="" alt="" />
                                     <ul class="article_list">
                                         <li>
                                             <h3>Nulla accumsan efficitur gravida.</h3>
@@ -151,218 +143,309 @@
                             </div>
                             <div class="row">
                                 <div class="col-4 article3">
-                                    <img src="" alt="">
+                                    <img src="" alt="" />
                                     <ul class="article_list">
                                         <li>
-                                            <h3>Integer euismod <br> 
-                                                lobortis libero</h3>
+                                            <h3>
+                                                Integer euismod <br />
+                                                lobortis libero
+                                            </h3>
                                         </li>
                                     </ul>
                                 </div>
                                 <div class="col-4 article4">
-                                    <img src="" alt="">
+                                    <img src="" alt="" />
                                     <ul class="article_list">
                                         <li>
-                                            <h3>Integer euismod <br> 
-                                                lobortis libero</h3>
+                                            <h3>
+                                                Integer euismod <br />
+                                                lobortis libero
+                                            </h3>
                                         </li>
-                                </div> 
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="wrpper">
-                    <a href="">+더보기</a>
+                <div class="wrapper">
+                    <div class="Mbtn">
+                        <a href="">+더보기</a>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- section#Pdt>.container>(.Twrap>h1.title+a.)+ul>li#pdt$*3>a>img+img+em+strong -->
         <section id="Pdt">
             <div class="container">
-                <div class="Twrap">
-                    <h1 class="title">Most Popular</h1>
-                    <a href="" class="">
-                        <span>+전체보기</span>
-                    </a>
+                <div class="wrapper">
+                    <div class="pdt_title">
+                        <h2>Most Popular</h2>
+                        <div class="plus_btn">
+                            <a href="" class="">+전체보기</a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4 pdt1">
+                            <img class="pdt_img" src="" alt="" />
+                            <ul class="pdt_list">
+                                <li>
+                                    <img class="pdt_logo" src="" alt="" />
+                                </li>
+                                <li>
+                                    <p class="pdt_name">
+                                        Jordan 1 Retro Hign OG LIght<br />
+                                        Smoke Grey
+                                    </p>
+                                </li>
+                                <li>
+                                    <strong class="pdt_price">250,000원</strong>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-4 pdt2">
+                            <img class="pdt_img" src="" alt="" />
+                            <ul class="pdt_list">
+                                <li>
+                                    <img class="pdt_logo" src="" alt="" />
+                                </li>
+                                <li>
+                                    <p class="pdt_name">
+                                        Jordan 1 Retro Hign OG LIght<br />
+                                        Smoke Grey
+                                    </p>
+                                </li>
+                                <li>
+                                    <strong class="pdt_price">250,000원</strong>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-4 pdt3">
+                            <img class="pdt_img" src="" alt="" />
+                            <ul class="pdt_list">
+                                <li>
+                                    <img class="pdt_logo" src="" alt="" />
+                                </li>
+                                <li>
+                                    <p class="pdt_name">
+                                        Jordan 1 Retro Hign OG LIght<br />
+                                        Smoke Grey
+                                    </p>
+                                </li>
+                                <li>
+                                    <strong class="pdt_price">250,000원</strong>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-                <ul>
-                    <li id="pdt1">
-                        <a href="">
-                            <div>상품이미지</div>
-                            <div>상품로고</div>
-                            <em>상품이름</em>
-                            <strong>상품가격</strong>
-                        </a>
-                    </li>
-                    <li id="pdt2">
-                        <a href="">
-                            <div>상품이미지</div>
-                            <div>상품로고</div>
-                            <em>상품이름</em>
-                            <strong>상품가격</strong>
-                        </a>
-                    </li>
-                    <li id="pdt3">
-                        <a href="">
-                            <div>상품이미지</div>
-                            <div>상품로고</div>
-                            <em>상품이름</em>
-                            <strong>상품가격</strong>
-                        </a>
-                    </li>
-                </ul>
             </div>
         </section>
 
-        <!-- section#Pdtslide>.contariner>img -->
-        <section id="Pdtslide">
+        <section id="Pdt_slide">
             <div class="contariner">
-                <ul class="slideimg">
-                    <li>
-                        <h2>상품이름1</h2>
-                        <div>상품이미지</div>
-                    </li>
-                    <li>
-                        <h2>상품이름2</h2>
-                        <div>상품이미지</div>
-                    </li>
-                    <li>
-                        <h2>상품이름3</h2>
-                        <div>상품이미지</div>
-                    </li>
-                </ul>
+                <div class="wrapper">
+                    <ul class="slide_list">
+                        <li>
+                            <div class="wrapper slide1">
+                                <img src="" alt="" class="slide_img" />
+                                <h2>상품이름</h2>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="wrapper slide2">
+                                <img src="" alt="" class="slide_img" />
+                                <h2>상품이름</h2>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="wrapper slide3">
+                                <img src="" alt="" class="slide_img" />
+                                <h2>상품이름</h2>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </section>
 
         <!-- section#Updt>.container>(.Twrap>h1.title+a.)+ul>li#updt$*4>a>img+img+em+strong -->
-        <section id="Updt">
+        <section id="Up_pdt">
             <div class="container">
-                <div class="Twrap">
-                    <h1 class="title">Upcoming Release</h1>
-                    <a href="" class="">
-                        <span>+전체보기</span>
-                    </a>
+                <div class="wrapper">
+                    <div class="pdt_title">
+                        <h2>Upcoming Release</h2>
+                        <div class="plus_btn">
+                            <a href="" class="">+전체보기</a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-3 Up_pdt1">
+                            <img class="Up_pdt_img" src="" alt="" />
+                            <ul class="Up_pdt_list">
+                                <li>
+                                    <img class="Up_pdt_logo" src="" alt="" />
+                                </li>
+                                <li>
+                                    <p class="Up_pdt_name">
+                                        Jordan 1 Retro Hign <br />
+                                        OG LIght <br />
+                                        Smoke Grey
+                                    </p>
+                                </li>
+                                <li>
+                                    <strong class="Up_pdt_date">07월 25</strong>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-3 Up_pdt2">
+                            <img class="Up_pdt_img" src="" alt="" />
+                            <ul class="Up_pdt_list">
+                                <li>
+                                    <img class="Up_pdt_logo" src="" alt="" />
+                                </li>
+                                <li>
+                                    <p class="Up_pdt_name">
+                                        Jordan 1 Retro Hign <br />
+                                        OG LIght <br />
+                                        Smoke Grey
+                                    </p>
+                                </li>
+                                <li>
+                                    <strong class="Up_pdt_date">07월 25</strong>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-3 Up_pdt3">
+                            <img class="Up_pdt_img" src="" alt="" />
+                            <ul class="Up_pdt_list">
+                                <li>
+                                    <img class="Up_pdt_logo" src="" alt="" />
+                                </li>
+                                <li>
+                                    <p class="Up_pdt_name">
+                                        Jordan 1 Retro Hign <br />
+                                        OG LIght <br />
+                                        Smoke Grey
+                                    </p>
+                                </li>
+                                <li>
+                                    <strong class="Up_pdt_date">07월 25</strong>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-3 Up_pdt4">
+                            <img class="Up_pdt_img" src="" alt="" />
+                            <ul class="Up_pdt_list">
+                                <li>
+                                    <img class="Up_pdt_logo" src="" alt="" />
+                                </li>
+                                <li>
+                                    <p class="Up_pdt_name">
+                                        Jordan 1 Retro Hign <br />
+                                        OG LIght <br />
+                                        Smoke Grey
+                                    </p>
+                                </li>
+                                <li>
+                                    <strong class="Up_pdt_date">07월 25</strong>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-                <ul>
-                    <li id="updt1">
-                        <a href="">
-                            <div>상품이미지</div>
-                            <div>상품로고</div>
-                            <em>상품이름</em>
-                            <strong>발매날짜</strong>
-                        </a>
-                    </li>
-                    <li id="updt2">
-                        <a href="">
-                            <div>상품이미지</div>
-                            <div>상품로고</div>
-                            <em>상품이름</em>
-                            <strong>발매날짜</strong>
-                        </a>
-                    </li>
-                    <li id="updt3">
-                        <a href="">
-                            <div>상품이미지</div>
-                            <div>상품로고</div>
-                            <em>상품이름</em>
-                            <strong>발매날짜</strong>
-                        </a>
-                    </li>
-                    <li id="updt4">
-                        <a href="">
-                            <div>상품이미지</div>
-                            <div>상품로고</div>
-                            <em>상품이름</em>
-                            <strong>발매날짜</strong>
-                        </a>
-                    </li>
-                </ul>
             </div>
         </section>
 
-        <!-- section#Sslide>.contariner>img -->
-        <section id="Roomslide">
+        <section id="Room_slide">
             <div class="contariner">
-                <ul class="slideimg">
-                    <li>
-                        <h2>쇼룸이미지1</h2>
-                        <div>쇼룸이미지1</div>
-                    </li>
-                    <li>
-                        <h2>쇼룸이미지2</h2>
-                        <div>쇼룸이미지2</div>
-                    </li>
-                    <li>
-                        <h2>쇼룸이미지3</h2>
-                        <div>쇼룸이미지3</div>
-                    </li>
-                </ul>
-            </div>
-        </section>
-
-        <!-- footer#footer>.container>(nav>ul.footer-navigator>li*4>a)+address.content((.kream>h5+p*2)+(.cs>h5+p*2)+p)+.copyright -->
-        <footer id="footer">
-            <div class="container">
-                <nav>
-                    <ul class="footer-navigator">
+                <div class="wrapper">
+                    <ul class="slide_list">
                         <li>
-                            <a href="">공지사항</a>
+                            <div class="wrapper slide1">
+                                <img src="" alt="" class="slide_img" />
+                                <h2>쇼룸이미지</h2>
+                            </div>
                         </li>
                         <li>
-                            <a href="">쇼룸안내</a>
+                            <div class="wrapper slide2">
+                                <img src="" alt="" class="slide_img" />
+                                <h2>쇼룸이미지</h2>
+                            </div>
                         </li>
                         <li>
-                            <a href="">검수기준</a>
-                        </li>
-                        <li>
-                            <a href="">자주 묻는 질문</a>
+                            <div class="wrapper slide3">
+                                <img src="" alt="" class="slide_img" />
+                                <h2>쇼룸이미지</h2>
+                            </div>
                         </li>
                     </ul>
-                </nav>
-                <address class="content">
-                    <div class="kream">
-                        <h4>KREAM</h4>
-                        <p>
-                            <span>(주)스노우</span>
-                            <em>|</em>
-                            <span>사업자번호: 786-87-00371</span>
-                            <em>|</em>
-                            <span>대표: 김창욱</span>
-                            <br />
-                            <span>통신판매업: 제 2018-성남분당B-0023호</span>
-                        </p>
-                        <p>
-                            <span>사업장소재지: 경기도 성남시 분당구 분당내곡로 117, 크래프트론 타워8층</span>
-                            <br />
-                            <span>호스팅 서비스: (주)네이버 비즈니스플랫폼</span>
-                        </p>
+                </div>
+            </div>
+        </section>
+
+        <footer id="footer">
+            <div class="container">
+                <div class="wrapper">
+                    <div class="row">
+                        <ul class="footer-nav">
+                            <li>
+                                <a href="">공지사항</a>
+                            </li>
+                            <li>
+                                <a href="">쇼룸안내</a>
+                            </li>
+                            <li>
+                                <a href="">검수기준</a>
+                            </li>
+                            <li>
+                                <a href="">자주 묻는 질문</a>
+                            </li>
+                        </ul>
                     </div>
-                    <div class="cs">
-                        <h4>고객센터</h4>
-                        <p>
-                            <span>대표전화: 1588-7813</span>
-                            <em>|</em>
-                            <span>평일 11시 - 18시</span>
-                            <em>|</em>
-                            <span>점심 12시 - 13시</span>
-                        </p>
-                        <p>
-                            <span>이메일: help@kream.co.kr</span>
-                            <em>|</em>
-                            <span>평일 11시 - 18시</span>
-                        </p>
-                    </div>
-                    <p>
-                        <span
-                            >(주)스노우는 통신판매 중개자로서 통신판매의 당사자가 아니므로 개별 판매자가 등록한 상품정보에 대해서 책임을
-                            지지 않습니다.</span
-                        >
-                        <br />
-                        <span>단, 거래과정에서 검수하고 보증하는 내용에 대한 책임은 당사에 있습니다.</span>
-                    </p>
-                </address>
-                <div class="copyright">© 2020 Snow Corp.v</div>
+                    <address class="content row">
+                        <div class="kream col-6">
+                            <h4>KREAM</h4>
+                            <p>
+                                <span>(주)스노우</span>
+                                <em>|</em>
+                                <span>사업자번호: 786-87-00371</span>
+                                <em>|</em>
+                                <span>대표: 김창욱</span>
+                                <br />
+                                <span>통신판매업: 제 2018-성남분당B-0023호</span>
+                            </p>
+                            <p>
+                                <span>사업장소재지: 경기도 성남시 분당구 분당내곡로 117, 크래프트론 타워8층</span>
+                                <br />
+                                <span>호스팅 서비스: (주)네이버 비즈니스플랫폼</span>
+                            </p>
+                        </div>
+                        <div class="cs col-6">
+                            <h4>고객센터</h4>
+                            <p>
+                                <span>대표전화: 1588-7813</span>
+                                <em>|</em>
+                                <span>평일 11시 - 18시</span>
+                                <em>|</em>
+                                <span>점심 12시 - 13시</span>
+                            </p>
+                            <p>
+                                <span>이메일: help@kream.co.kr</span>
+                                <em>|</em>
+                                <span>평일 11시 - 18시</span>
+                            </p>
+                        </div>
+                        <div class="alert row">
+                            <p>
+                                <span>(주)스노우는 통신판매 중개자로서 통신판매의 당사자가 아니므로 개별 판매자가 등록한 상품정보에 대해서 책임을 지지 않습니다.</span>
+                                <br />
+                                <span>단, 거래과정에서 검수하고 보증하는 내용에 대한 책임은 당사에 있습니다.</span>
+                            </p>
+                        </div>
+                    </address>
+                    <div class="copyright">© 2020 Snow Corp.v</div>
+                </div>
             </div>
         </footer>
     </body>

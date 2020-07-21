@@ -34,7 +34,7 @@
 }
 
 /* 메뉴 */
-.navbar_gnb {
+.navbar_gnb_list {
     display: flex;
     padding-top: 30px;
 }
@@ -59,7 +59,7 @@
 }
 
 /* 개인정보란 */
-.navbar_logbox {
+.navbar_logbox_list {
     display: flex;
     padding: 30px 35px;
 }
@@ -113,7 +113,7 @@
 }
 
 /* sns */
-#sns {
+#icon_set {
     position: fixed;
     top: 50%;
     right: 30px;
@@ -122,7 +122,7 @@
     text-align: center;
 }
 
-#sns a {
+#icon_set a {
     display: block;
     padding: 15px;
     color: #333333;
