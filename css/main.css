@@ -5,6 +5,34 @@
     margin: 0 auto;
 }
 
+/* 이벤트 베너 (Ebnr) */
+#Ebnr {
+    position: relative;
+    height: 0;
+    padding-bottom: 56%;
+}
+#youtube {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* sns */
+#icon_set {
+    position: fixed;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+#icon_set a {
+    display: block;
+    padding: 15px;
+    color: #333333;
+}
+
 /* 헤더 */
 .navbar {
     display: flex;
@@ -110,20 +138,4 @@
     #sns {
         display: none;
     }
-}
-
-/* sns */
-#icon_set {
-    position: fixed;
-    top: 50%;
-    right: 30px;
-    transform: translateY(-50%);
-    font-size: 1.5rem;
-    text-align: center;
-}
-
-#icon_set a {
-    display: block;
-    padding: 15px;
-    color: #333333;
 }
