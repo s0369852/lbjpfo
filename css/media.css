@@ -3,7 +3,7 @@
 /* All Device */
 
 /* Mobile Device */
-@media all and (max-width: 768px) {
+@media all and (min-width: 420px) {
     .col-xs-1,
     .col-xs-2,
     .col-xs-3,
@@ -123,7 +123,7 @@
 }
 
 /* Tablet Device */
-@media all and (min-width: 768px) and (max-width: 1024px) {
+@media all and (min-width: 960px) {
     .col-md-1,
     .col-md-2,
     .col-md-3,
@@ -183,7 +183,7 @@
 }
 
 /* Desktop Device */
-@media all and (min-width: 1280px) {
+/* @media all and (min-width: 1280px) {
     .col-lg-1,
     .col-lg-2,
     .col-lg-3,
@@ -240,4 +240,4 @@
     .lg-show {
         display: block;
     }
-}
+} */
