@@ -4,7 +4,7 @@ $(function () {
     //     $(".navbar_logbox").css({ display: "block" });
     // });
 
-    $(".slideimg").slick({
+    $(".slide_list").slick({
         dots: true,
         infinite: true,
         speed: 300,

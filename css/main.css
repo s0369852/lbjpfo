@@ -2,7 +2,7 @@
 
 .container {
     max-width: 1280px;
-    margin: 0 auto;
+    margin: 5% auto;
 }
 
 /* 이벤트 베너 (Ebnr) */
@@ -25,6 +25,7 @@
     transform: translateY(-50%);
     font-size: 1.5rem;
     text-align: center;
+    z-index: 10;
 }
 
 #icon_set a {
@@ -95,15 +96,9 @@
 .navbar_logbox li {
     padding: 0 15px;
     font-size: 1.8rem;
-    color: #fff8e7;
 }
 
-.Hbtn {
-    display: none;
-    position: absolute;
-    right: 30px;
-    top: 30px;
-    font-size: 2rem;
+.navbar_logbox li a {
     color: #fff8e7;
 }
 
@@ -138,4 +133,34 @@
     #sns {
         display: none;
     }
+}
+
+/* slickslider */
+#mainBanner {
+    position: relative;
+}
+.slick-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 5;
+    font-size: 3em;
+    background: transparent;
+    color: tomato;
+}
+.prevBtn {
+    left: 50px;
+}
+.nextBtn {
+    right: 50px;
+}
+
+.slick-slide {
+    position: relative;
+}
+
+.slick-slide a {
+    display: block;
+    height: calc(100vh - 50%);
 }
