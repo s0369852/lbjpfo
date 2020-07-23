@@ -18,7 +18,7 @@
     </head>
     <body>
         <header id="hd">
-            <nav class="navbar">
+            <div class="navbar">
                 <div class="navbar_logo">
                     <h1>
                         <a href="#">
@@ -27,31 +27,24 @@
                         </a>
                     </h1>
                 </div>
-                <div class="navbar_gnb">
+                <nav class="navbar_gnb">
                     <ul class="navbar_gnb_list">
                         <li>
-                            <a href="#">
-                                <span>발매정보</span>
-                            </a>
+                            <a href="#">발매정보</a>
+                        </li>
+                        <li>
+                            <a href="#">커뮤니티</a>
+                        </li>
+                        <li>
+                            <a href="#">KICKS</a>
                         </li>
                         <li>
                             <a href="#">
-                                <span>커뮤니티</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <span>KICKS</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i class="xi-search"></i>
-                                <span>검색</span>
+                                <i class="xi-search">검색</i>
                             </a>
                         </li>
                     </ul>
-                </div>
+                </nav>
                 <div class="navbar_logbox">
                     <ul class="navbar_logbox_list">
                         <li>
@@ -73,10 +66,10 @@
                         <span></span>
                     </a>
                 </div> -->
-            </nav>
+            </div>
         </header>
 
-        <section id="Ebnr">
+        <figure id="Event_bnr">
             <div class="wrapper">
                 <div class="row">
                     <div class="col-md-12 col-sm-12">
@@ -84,9 +77,9 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </figure>
 
-        <div id="icon_set">
+        <aside id="Icon_set">
             <div class="wrapper">
                 <div class="icon_youtube">
                     <a href="">
@@ -114,14 +107,14 @@
                     </a>
                 </div>
             </div>
-        </div>
+        </aside>
 
-        <section id="Mbnr">
+        <section id="Main_bnr">
             <div class="container">
                 <div class="wrapper">
-                    <h2>#KICKS OF THE DAY</h2>
+                        <h2>#KICKS OF THE DAY</h2>
                     <div class="row">
-                        <div class="col-md-4 col-sm-4 article article1">
+                        <article class="col-md-4 col-sm-4 article article1">
                             <img src="http://placeimg.com/432/681/any" alt="" />
                             <ul class="article_name">
                                 <li>
@@ -134,10 +127,10 @@
                                     <p>INTEGER FRINGILLA DOLOR VOLUTPAT MI SEMPER</p>
                                 </li>
                             </ul>
-                        </div>
+                        </article>
                         <div class="col-md-8 col-sm-8">
                             <div class="row">
-                                <div class="col-md-12 col-sm-12 article article2">
+                                <article class="col-md-12 col-sm-12 article article2">
                                     <img src="http://placeimg.com/864/312/any" alt="" />
                                     <ul class="article_name">
                                         <li>
@@ -147,10 +140,10 @@
                                             <p>lectus dolor euismod augue, sit amet tincidunt ante ligula in eros</p>
                                         </li>
                                     </ul>
-                                </div>
+                                </article>
                             </div>
                             <div class="row">
-                                <div class="col-md-6 col-sm-6  article article3">
+                                <article class="col-md-6 col-sm-6 article article3">
                                     <img src="http://placeimg.com/432/318/any" alt="" />
                                     <ul class="article_name">
                                         <li>
@@ -160,8 +153,8 @@
                                             </h3>
                                         </li>
                                     </ul>
-                                </div>
-                                <div class="col-md-6 col-sm-6 article article4">
+                                </article>
+                                <article class="col-md-6 col-sm-6 article article4">
                                     <img src="http://placeimg.com/432/318/any" alt="" />
                                     <ul class="article_name">
                                         <li>
@@ -171,7 +164,7 @@
                                             </h3>
                                         </li>
                                     </ul>
-                                </div>
+                                </article>
                             </div>
                         </div>
                     </div>
@@ -184,17 +177,17 @@
             </div>
         </section>
 
-        <section id="Pdt">
+        <section id="Product">
             <div class="container">
                 <div class="wrapper">
-                    <div class="pdt_title">
+                    <header class="title pdt_title">
                         <h2>Most Popular</h2>
                         <div class="plus_btn">
                             <a href="" class="">+전체보기</a>
                         </div>
-                    </div>
+                    </header>
                     <div class="row">
-                        <div class="col-md-4 pdt pdt1">
+                        <section class="col-md-4 pdt pdt1">
                             <img class="pdt_img" src="http://placeimg.com/416/363/any" alt="" />
                             <ul class="pdt_list">
                                 <li>
@@ -207,11 +200,11 @@
                                     </p>
                                 </li>
                                 <li>
-                                    <strong class="pdt_price">250,000원</strong>
+                                    <h3 class="pdt_price">250,000원</h3>
                                 </li>
                             </ul>
-                        </div>
-                        <div class="col-md-4 pdt pdt2">
+                        </section>
+                        <section class="col-md-4 pdt pdt2">
                             <img class="pdt_img" src="http://placeimg.com/416/363/any" alt="" />
                             <ul class="pdt_list">
                                 <li>
@@ -224,11 +217,11 @@
                                     </p>
                                 </li>
                                 <li>
-                                    <strong class="pdt_price">250,000원</strong>
+                                    <h3 class="pdt_price">250,000원</h3>
                                 </li>
                             </ul>
-                        </div>
-                        <div class="col-md-4 pdt pdt3">
+                        </section>
+                        <section class="col-md-4 pdt pdt3">
                             <img class="pdt_img" src="http://placeimg.com/416/363/any" alt="" />
                             <ul class="pdt_list">
                                 <li>
@@ -241,53 +234,53 @@
                                     </p>
                                 </li>
                                 <li>
-                                    <strong class="pdt_price">250,000원</strong>
+                                    <h3 class="pdt_price">250,000원</h3>
                                 </li>
                             </ul>
-                        </div>
+                        </section>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="Pdt_slide">
+        <section id="Product_slide">
             <div class="container">
                 <div class="wrapper">
                     <ul class="slide_list">
                         <li>
-                            <div class="wrapper slide slide1">
+                            <figure class="wrapper slide slide1">
                                 <img src="http://lorempixel.com/1280/720" alt="" class="slide_img" />
-                                <h2>상품이름</h2>
-                            </div>
+                                <figcaption>상품이름</figcaption>
+                            </figure>
                         </li>
                         <li>
-                            <div class="wrapper slide slide2">
+                            <figure class="wrapper slide slide2">
                                 <img src="http://lorempixel.com/1280/720" alt="" class="slide_img" />
-                                <h2>상품이름</h2>
-                            </div>
+                                <figcaption>상품이름</figcaption>
+                            </figure>
                         </li>
                         <li>
-                            <div class="wrapper slide slide3">
+                            <figure class="wrapper slide slide3">
                                 <img src="http://lorempixel.com/1280/720" alt="" class="slide_img" />
-                                <h2>상품이름</h2>
-                            </div>
+                                <figcaption>상품이름</figcaption>
+                            </figure>
                         </li>
                     </ul>
                 </div>
             </div>
         </section>
 
-        <section id="Up_pdt">
+        <section id="Up_product">
             <div class="container">
                 <div class="wrapper">
-                    <div class="pdt_title">
+                    <header class="title Up_pdt_title">
                         <h2>Upcoming Release</h2>
                         <div class="plus_btn">
                             <a href="" class="">+전체보기</a>
                         </div>
-                    </div>
+                    </header>
                     <div class="row">
-                        <div class="col-md-3 col-sm-3 col-xs-4 Up_pdt Up_pdt1">
+                        <section class="col-md-3 col-sm-3 col-xs-4 Up_pdt Up_pdt1">
                             <img class="Up_pdt_img" src="http://placeimg.com/324/314/any" alt="" />
                             <ul class="Up_pdt_list">
                                 <li>
@@ -301,11 +294,11 @@
                                     </p>
                                 </li>
                                 <li>
-                                    <strong class="Up_pdt_date">07월 25</strong>
+                                    <h3 class="Up_pdt_date">07월 25</h3>
                                 </li>
                             </ul>
-                        </div>
-                        <div class="col-md-3 col-sm-4 col-xs-6 Up_pdt Up_pdt2">
+                        </section>
+                        <section class="col-md-3 col-sm-4 col-xs-6 Up_pdt Up_pdt2">
                             <img class="Up_pdt_img" src="http://placeimg.com/324/314/any" alt="" />
                             <ul class="Up_pdt_list">
                                 <li>
@@ -319,11 +312,11 @@
                                     </p>
                                 </li>
                                 <li>
-                                    <strong class="Up_pdt_date">07월 25</strong>
+                                    <h3 class="Up_pdt_date">07월 25</h3>
                                 </li>
                             </ul>
-                        </div>
-                        <div class="col-md-3 col-sm-4 col-xs-6 Up_pdt Up_pdt3">
+                        </section>
+                        <section class="col-md-3 col-sm-4 col-xs-6 Up_pdt Up_pdt3">
                             <img class="Up_pdt_img" src="http://placeimg.com/324/314/any" alt="" />
                             <ul class="Up_pdt_list">
                                 <li>
@@ -337,10 +330,10 @@
                                     </p>
                                 </li>
                                 <li>
-                                    <strong class="Up_pdt_date">07월 25</strong>
+                                    <h3 class="Up_pdt_date">07월 25</h3>
                                 </li>
                             </ul>
-                        </div>
+                        </section>
                         <div class="col-md-3 col-sm-4 col-xs-6 Up_pdt Up_pdt4">
                             <img class="Up_pdt_img" src="http://placeimg.com/324/314/any" alt="" />
                             <ul class="Up_pdt_list">
@@ -364,7 +357,7 @@
             </div>
         </section>
 
-        <section id="Room_slide">
+        <figure id="Room_slide">
             <div class="container">
                 <div class="wrapper">
                     <ul class="slide_list">
@@ -389,7 +382,7 @@
                     </ul>
                 </div>
             </div>
-        </section>
+        </figure>
 
         <footer id="footer">
             <div class="container">
