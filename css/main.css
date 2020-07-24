@@ -57,8 +57,6 @@
     font-size: 1rem;
 }
 
-#Hbtn {display: none;}
-
 /* 개인정보란 */
 .navbar_logbox_list {
     display: flex;
@@ -71,6 +69,9 @@
 }
 
 .navbar_logbox li a {color: #fff8e7;}
+
+/* 햄버거버튼 */
+#Hbtn {display: none;}
 
 /* header-@media */
 @media screen and (max-width: 768px) {
@@ -147,7 +148,7 @@
     #Icon_set {display: none;}
 }
 
-/* 이벤트 베너 (Ebnr) */
+/* 이벤트 베너 (youtube) */
 #Event_bnr {
     position: relative;
     height: 0;
@@ -190,18 +191,69 @@
     background: transparent;
     color: tomato;
 }
-.prevBtn {
-    left: 50px;
-}
-.nextBtn {
-    right: 50px;
-}
-
-.slick-slide {
-    position: relative;
-}
-
+.prevBtn {left: 50px;}
+.nextBtn {right: 50px;}
+.slick-slide {position: relative;}
 .slick-slide a {
-    display: block;
+    display: block; 
     height: calc(100vh - 50%);
 }
+
+/* 제목, 기사, 상품 이미지, 버튼 (공통)*/
+
+.title {position: relative;}
+.plus_btn {
+           position: absolute;
+           right: 0px;
+           top: 50%;
+           transform:translateY(-50%) ;
+           -webkit-transform:translateY(-50%) ;
+           -moz-transform:translateY(-50%) ;
+           -ms-transform:translateY(-50%) ;
+           -o-transform:translateY(-50%) ;
+        }
+
+.slide_img {
+    border-radius:0 ;
+    -webkit-border-radius:0 ;
+    -moz-border-radius:0 ;
+    -ms-border-radius:0 ;
+    -o-border-radius:0 ;
+    }
+
+.Mbtn {
+    display: flex;
+    justify-content: center;
+    margin: 3% 0;
+    }
+
+.article, .pdt, .Up_pdt {
+    border: 1px solid red;
+    position: relative;
+    }
+
+/* 메인 베너 */
+.article2 {margin-bottom: 16px;}
+
+.article_name {
+    position: absolute;
+    left: 5%;
+    bottom: 5%;
+    color: #8d8d8d;
+    }
+
+/* 상품 */
+.pdt_list {
+    position: absolute;
+    left: 5%;
+    bottom: 5%;
+    }
+
+/* 출시상품 */
+.Up_pdt_date {
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    }
+
+/* footer */
