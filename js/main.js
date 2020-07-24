@@ -1,8 +1,9 @@
 $(function () {
-    // $(".Hbtn").click(function () {
-    //     $(".navbar_gnb").css({ display: "block" });
-    //     $(".navbar_logbox").css({ display: "block" });
-    // });
+    $("#Hbtn").click(function(){
+        $("#Hbtn").toggleClass("act");
+        $(".navbar_gnb").toggleClass("pull");
+        $(".navbar_logbox").toggleClass("pull")
+    });
 
     $(".slide_list").slick({
         dots: true,

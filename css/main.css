@@ -5,38 +5,10 @@
     margin: 5% auto;
 }
 
-/* 이벤트 베너 (Ebnr) */
-#Event_bnr {
-    position: relative;
-    height: 0;
-    padding-bottom: 56%;
-}
-#youtube {
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-/* sns */
-#Icon_set {
-    position: fixed;
-    top: 50%;
-    right: 30px;
-    transform: translateY(-50%);
-    font-size: 1.5rem;
-    text-align: center;
-    z-index: 10;
-}
-
-#Icon_set a {
-    display: block;
-    padding: 15px;
-    color: #333333;
-}
-
 /* 헤더 */
 .navbar {
     display: flex;
+    position: relative;
     width: 100%;
     justify-content: space-between;
     align-items: center;
@@ -65,7 +37,7 @@
 /* 메뉴 */
 .navbar_gnb_list {
     display: flex;
-    padding-top: 30px;
+    padding: 10px 0;
 }
 
 .navbar_gnb li {
@@ -85,6 +57,8 @@
     font-size: 1rem;
 }
 
+#Hbtn {display: none;}
+
 /* 개인정보란 */
 .navbar_logbox_list {
     display: flex;
@@ -98,33 +72,108 @@
 
 .navbar_logbox li a {color: #fff8e7;}
 
-/* @media */
+/* header-@media */
 @media screen and (max-width: 768px) {
     .navbar {
+        display: flex;
         flex-direction: column;
         align-items: flex-start;
     }
 
-    .navbar_gnb {
-        flex-direction: column;
-        align-items: center;
-        padding-top: 0;
-        width: 100%;
+    .navbar_gnb, 
+    .navbar_logbox {
+        display: none;
     }
-
+    .navbar_gnb_list {
+        display: block;
+    }
     .navbar_gnb li {
         margin: 5px;
         text-align: center;
     }
-
-    .navbar_logbox {
-        justify-content: center;
+    .navbar_gnb.pull, 
+    .navbar_logbox.pull {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
         width: 100%;
     }
+    
+    #Hbtn {
+        display: block;
+        position: absolute;
+        right: 35px;
+        top: 50px;
+        background: transparent;
+    }
+    #Hbtn span {
+        display: block;
+        height: 2px;
+        width: 20px;
+        background: #fff8e7;
+        margin: 5px 0;
+        transition: 0.5s;
+        -webkit-transition: 0.5s;
+        -moz-transition: 0.5s;
+        -ms-transition: 0.5s;
+        -o-transition: 0.5s;
+    }
+    #Hbtn.act span:first-child {
+        width: 25px;
+        transform: rotate(-45deg) translateY(10px);
+        -webkit-transform: rotate(-45deg) translateY(10px);
+        -moz-transform: rotate(-45deg) translateY(10px);
+        -ms-transform: rotate(-45deg) translateY(10px);
+        -o-transform: rotate(-45deg) translateY(10px);
+    }
+    #Hbtn.act span:nth-child(2) {
+        width: 0;
+        transition:none ;
+        -webkit-transition:none ;
+        -moz-transition:none ;
+        -ms-transition:none ;
+        -o-transition:none ;
 
-    .Hbtn {display: block;}
+    }
+    #Hbtn.act span:last-child {
+        width: 25px;
+        transform: rotate(45deg) translateY(-10px);
+        -webkit-transform: rotate(45deg) translateY(-10px);
+        -moz-transform: rotate(45deg) translateY(-10px);
+        -ms-transform: rotate(45deg) translateY(-10px);
+        -o-transform: rotate(45deg) translateY(-10px);
+    }
 
-    #sns {display: none;}
+    #Icon_set {display: none;}
+}
+
+/* 이벤트 베너 (Ebnr) */
+#Event_bnr {
+    position: relative;
+    height: 0;
+    padding-bottom: 56%;
+}
+#youtube {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* sns */
+#Icon_set {
+    position: fixed;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
+    font-size: 1.5rem;
+    text-align: center;
+    z-index: 10;
+}
+
+#Icon_set a {
+    display: block;
+    padding: 15px;
+    color: #333333;
 }
 
 /* slickslider */
