@@ -34,7 +34,7 @@
     color: #fff8e7;
 }
 
-/* 메뉴 */
+/* 상단 메뉴 */
 .navbar_gnb_list {
     display: flex;
     padding: 10px 0;
@@ -57,7 +57,7 @@
     font-size: 1rem;
 }
 
-/* 개인정보란 */
+/* 개인정보 아이콘 */
 .navbar_logbox_list {
     display: flex;
     padding: 30px 35px;
@@ -149,6 +149,10 @@
 }
 
 /* 이벤트 베너 (youtube) */
+.video {
+    width: 100%; 
+    height: 100%;
+    }
 #Event_bnr {
     position: relative;
     height: 0;
@@ -160,18 +164,18 @@
     left: 0;
 }
 
-/* sns */
-#Icon_set {
+/* 퀵메뉴 */
+#Quick_menu {
     position: fixed;
     top: 50%;
-    right: 30px;
+    right: 20px;
     transform: translateY(-50%);
     font-size: 1.5rem;
     text-align: center;
     z-index: 10;
 }
 
-#Icon_set a {
+#Quick_menu a {
     display: block;
     padding: 15px;
     color: #333333;
@@ -257,3 +261,28 @@
     }
 
 /* footer */
+.footer_gnb_list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start
+    }
+.footer_gnb_list li {
+    padding: 10px;
+    margin: 10px;
+}
+
+/* flex 강사님 css */
+/* .flex {
+    display: flex;
+}
+.wrapper > .flex > div {
+    padding: 10px;
+}
+.flex_left {
+    flex-basis: 35%;
+}
+
+.flex_right {
+    flex-basis: 65%;
+    flex-direction: column
+} */
