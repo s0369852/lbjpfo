@@ -280,19 +280,3 @@
     padding: 10px;
     margin: 10px;
 }
-
-/* flex 강사님 css */
-/* .flex {
-    display: flex;
-}
-.wrapper > .flex > div {
-    padding: 10px;
-}
-.flex_left {
-    flex-basis: 35%;
-}
-
-.flex_right {
-    flex-basis: 65%;
-    flex-direction: column
-} */

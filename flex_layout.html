@@ -5,34 +5,16 @@
     <title>layout</title>
     <style>
     
-        * {margin: 0; padding: 0;}
+        * {margin: 0; padding: 0; box-sizing: border-box;}
         ul, li {list-style: none;}
-/*        #main_bnr {width: 100%;}*/
         
         .container {width: 1200px; margin: 0 auto;}
         .flex {display: flex;}
-        .relative {position: relative;}
+        .rel {position: relative;}
         .article_img {border-radius: 12px;}
-        .article_name {position: absolute;}
-        
-        .flex_left {flex-basis: 38%; margin-right: 2%}
-        .article_box1 {width: 100%;}
-        .article_name {left: 5%; bottom: 5%}
-        
-        
-        .flex_right {flex-basis: 58%; margin-left: 2%;}
-        
-        .flex_up {width: 100%}
-        .article_box2 {width: 100%;}
-        .article_name {left: 5%; bottom: 5%}
-        
-        .flex_down {width: 100%; justify-content: space-between}
-        .article_box3 {width: 46%;}
-        .article_name {left: 5%; bottom: 5%}
-        .article_box4 {width: 46%;}
-        .article_name {left: 5%; bottom: 5%}
-        
+        .article_name {position: absolute; left: 3%; bottom: 5%}
         h3,p,a {color: white}
+        
         
         
         
@@ -47,25 +29,25 @@
                <h2>#KICKS OF THE DAY</h2>
                <div class="flex">
                    <div class="flex_left">
-                       <article class="article_box1 relative">
+                    <article class="article_box1 rel">
                            <img class="article_img" src="http://placeimg.com/400/600/any" alt="기사이미지">
-                            <ul class="article_name">
-                                <li>
-                                    <h3>
-                                        Lorem ipsum <br />
-                                        dolor sit amet
-                                    </h3>
-                                </li>
-                                <li>
-                                    <p>INTEGER FRINGILLA DOLOR VOLUTPAT MI SEMPER</p>
-                                </li>
-                            </ul>
-                        </article>
+                           <ul class="article_name">
+                               <li>
+                                   <h3>
+                                    Lorem ipsum <br />
+                                    dolor sit amet
+                                   </h3>
+                               </li>
+                               <li>
+                                   <p>INTEGER FRINGILLA DOLOR VOLUTPAT MI SEMPER</p>
+                               </li>
+                           </ul>
+                       </article>
                    </div>
                    <div class="flex_right">
-                     <div class="flex_up">
-                       <article class="article_box2 relative">
-                           <img class="article_img" src="http://placeimg.com/800/300/any" alt="기사이미지">
+                      <div class="flex flex_up">
+                        <article class="article_box2 rel">
+                            <img class="article_img" src="http://placeimg.com/800/300/any" alt="기사이미지">
                             <ul class="article_name">
                                 <li>
                                     <h3>
@@ -77,11 +59,11 @@
                                     <p>INTEGER FRINGILLA DOLOR VOLUTPAT MI SEMPER</p>
                                 </li>
                             </ul>
-                        </article>
-                     </div>
-                     <div class="flex_down">
-                        <article class="article_box3 relative">
-                           <img class="article_img" src="http://placeimg.com/400/300/any" alt="기사이미지">
+                       </article>
+                      </div>
+                      <div class="flex flex_down">
+                          <article class="article_box3 rel">
+                            <img class="article_img" src="http://placeimg.com/400/300/any" alt="기사이미지">
                             <ul class="article_name">
                                 <li>
                                     <h3>
@@ -90,9 +72,9 @@
                                     </h3>
                                 </li>
                             </ul>
-                        </article>
-                        <article class="article_box4 relative">
-                           <img class="article_img" src="http://placeimg.com/400/300/any" alt="기사이미지">
+                       </article>
+                       <article class="article_box4 rel">
+                            <img class="article_img" src="http://placeimg.com/400/300/any" alt="기사이미지">
                             <ul class="article_name">
                                 <li>
                                     <h3>
@@ -101,8 +83,8 @@
                                     </h3>
                                 </li>
                             </ul>
-                        </article>
-                     </div>
+                       </article>
+                      </div>
                    </div>
                </div>
             </div>
