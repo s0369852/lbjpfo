@@ -5,6 +5,16 @@
     margin: 5% auto;
 }
 
+#hd {width: 100%;}
+#Event_bnr {width: 100%;}
+#Quick_menu {}
+#Main_bnr {width: 100%;}
+#Product {width: 100%;}
+#Product_slide {width: 100%;}
+#Up_product {width: 100%;}
+#Room_slide{width: 100%;}
+#footer {width: 100%;}
+
 /* 헤더 */
 .navbar {
     display: flex;
@@ -145,7 +155,7 @@
         -o-transform: rotate(45deg) translateY(-10px);
     }
 
-    #Icon_set {display: none;}
+    #Quick_menu {display: none;}
 }
 
 /* 이벤트 베너 (youtube) */
@@ -232,7 +242,7 @@
     }
 
 .article, .pdt, .Up_pdt {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     position: relative;
     }
 
