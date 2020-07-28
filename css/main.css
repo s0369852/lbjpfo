@@ -83,81 +83,6 @@
 /* 햄버거버튼 */
 #Hbtn {display: none;}
 
-/* header-@media */
-@media screen and (max-width: 768px) {
-    .navbar {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .navbar_gnb, 
-    .navbar_logbox {
-        display: none;
-    }
-    .navbar_gnb_list {
-        display: block;
-    }
-    .navbar_gnb li {
-        margin: 5px;
-        text-align: center;
-    }
-    .navbar_gnb.pull, 
-    .navbar_logbox.pull {
-        display: flex;
-        flex-flow: column wrap;
-        align-items: center;
-        width: 100%;
-    }
-    
-    #Hbtn {
-        display: block;
-        position: absolute;
-        right: 35px;
-        top: 50px;
-        background: transparent;
-    }
-    #Hbtn span {
-        display: block;
-        height: 2px;
-        width: 20px;
-        background: #fff8e7;
-        margin: 5px 0;
-        transition: 0.5s;
-        -webkit-transition: 0.5s;
-        -moz-transition: 0.5s;
-        -ms-transition: 0.5s;
-        -o-transition: 0.5s;
-    }
-    #Hbtn.act span:first-child {
-        width: 25px;
-        transform: rotate(-45deg) translateY(10px);
-        -webkit-transform: rotate(-45deg) translateY(10px);
-        -moz-transform: rotate(-45deg) translateY(10px);
-        -ms-transform: rotate(-45deg) translateY(10px);
-        -o-transform: rotate(-45deg) translateY(10px);
-    }
-    #Hbtn.act span:nth-child(2) {
-        width: 0;
-        transition:none ;
-        -webkit-transition:none ;
-        -moz-transition:none ;
-        -ms-transition:none ;
-        -o-transition:none ;
-
-    }
-    #Hbtn.act span:last-child {
-        width: 25px;
-        transform: rotate(45deg) translateY(-10px);
-        -webkit-transform: rotate(45deg) translateY(-10px);
-        -moz-transform: rotate(45deg) translateY(-10px);
-        -ms-transform: rotate(45deg) translateY(-10px);
-        -o-transform: rotate(45deg) translateY(-10px);
-    }
-
-    #Quick_menu {display: none;}
-}
-
 /* 이벤트 베너 (youtube) */
 .video {
     width: 100%; 
@@ -271,12 +196,97 @@
     }
 
 /* footer */
-.footer_gnb_list {
+.footer_gnb {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
     justify-content: flex-start
     }
-.footer_gnb_list li {
+.footer_gnb_list {
+    flex-basis: 25%;
+}
+.footer_gnb_list li{
     padding: 10px;
     margin: 10px;
+}
+
+/* 0 ~ 768 일떄 */
+@media screen and (max-width: 768px) {
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar_gnb, 
+    .navbar_logbox {
+        display: none;
+    }
+    .navbar_gnb_list {
+        display: block;
+    }
+    .navbar_gnb li {
+        margin: 5px;
+        text-align: center;
+    }
+    .navbar_gnb.pull, 
+    .navbar_logbox.pull {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        width: 100%;
+    }
+    
+    #Hbtn {
+        display: block;
+        position: absolute;
+        right: 35px;
+        top: 50px;
+        background: transparent;
+    }
+    #Hbtn span {
+        display: block;
+        height: 2px;
+        width: 20px;
+        background: #fff8e7;
+        margin: 5px 0;
+        transition: 0.5s;
+        -webkit-transition: 0.5s;
+        -moz-transition: 0.5s;
+        -ms-transition: 0.5s;
+        -o-transition: 0.5s;
+    }
+    #Hbtn.act span:first-child {
+        width: 25px;
+        transform: rotate(-45deg) translateY(10px);
+        -webkit-transform: rotate(-45deg) translateY(10px);
+        -moz-transform: rotate(-45deg) translateY(10px);
+        -ms-transform: rotate(-45deg) translateY(10px);
+        -o-transform: rotate(-45deg) translateY(10px);
+    }
+    #Hbtn.act span:nth-child(2) {
+        width: 0;
+        transition:none ;
+        -webkit-transition:none ;
+        -moz-transition:none ;
+        -ms-transition:none ;
+        -o-transition:none ;
+
+    }
+    #Hbtn.act span:last-child {
+        width: 25px;
+        transform: rotate(45deg) translateY(-10px);
+        -webkit-transform: rotate(45deg) translateY(-10px);
+        -moz-transform: rotate(45deg) translateY(-10px);
+        -ms-transform: rotate(45deg) translateY(-10px);
+        -o-transform: rotate(45deg) translateY(-10px);
+    }
+
+    #Quick_menu {display: none;}
+}
+
+/* 0 ~ 460 일떄 */
+@media screen and (max-width: 460px) {
+    #Main_bnr .article {margin-bottom: 10px;}
+    #Product .pdt {margin-bottom: 10px;}
+    #Up_product .Up_pdt {margin-bottom: 10px;}
 }

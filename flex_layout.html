@@ -9,14 +9,30 @@
         ul, li {list-style: none;}
         
         .container {width: 1200px; margin: 0 auto;}
-        .flex {display: flex;}
+        .flex {display: flex; width: 1200px;}
         .rel {position: relative;}
-        .article_img {border-radius: 12px;}
-        .article_name {position: absolute; left: 3%; bottom: 5%}
         h3,p,a {color: white}
         
+/*        article {border-radius: 12px; width: 98%; padding: 1%;}*/
+        .article_img {border-radius: 12px;}
+        .article_name {position: absolute; left: 3%; bottom: 5%}
+/*
+        .article_box1 {width: 400px; height: 600px}
+        .article_box2 {width: 800px; height: 300px;}
+        .article_box3 {width: 400px; height: 300px;}
+        .article_box4 {width: 400px; height: 300px;}
+*/
         
+        .flex_left {padding: 10px;}
+        .flex_left > .article_box1 {flex:auto;}
+        .flex_right {padding: 10px; flex-flow: column wrap; align-content: space-between;}
+        .flex_right > .flex_up {flex-basis: 100%;}
+        .flex_right > .flex_up > .article_box2 {display: flex flex:auto;}
+        .flex_right > .flex_down {display: flex; flex-basis: 50%; flex-flow: row nowrap; justify-content: space-between; }
+        .flex_right > .flex_down > .article_box3 {flex:auto;}
+        .flex_right > .flex_down > .article_box4 {flex:auto;}
         
+
         
         
     </style>
@@ -45,7 +61,7 @@
                        </article>
                    </div>
                    <div class="flex_right">
-                      <div class="flex flex_up">
+                      <div class="flex_up">
                         <article class="article_box2 rel">
                             <img class="article_img" src="http://placeimg.com/800/300/any" alt="기사이미지">
                             <ul class="article_name">
@@ -61,7 +77,7 @@
                             </ul>
                        </article>
                       </div>
-                      <div class="flex flex_down">
+                      <div class="flex_down">
                           <article class="article_box3 rel">
                             <img class="article_img" src="http://placeimg.com/400/300/any" alt="기사이미지">
                             <ul class="article_name">
