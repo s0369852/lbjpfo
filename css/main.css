@@ -1,19 +1,13 @@
 @charset "UTF-8";
 
 .container {
-    max-width: 1200px;
-    margin: 5% auto;
+    margin: 5% 0;
 }
-
-#hd {width: 100%;}
-#Event_bnr {width: 100%;}
-#Quick_menu {}
-#Main_bnr {width: 100%;}
-#Product {width: 100%;}
-#Product_slide {width: 100%;}
-#Up_product {width: 100%;}
-#Room_slide{width: 100%;}
-#footer {width: 100%;}
+.wrapper {
+    width: 96%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
 /* 헤더 */
 .navbar {
@@ -166,7 +160,7 @@
     margin: 3% 0;
     }
 
-.article, .pdt, .Up_pdt {
+.article, .pdt, {
     /* border: 1px solid red; */
     position: relative;
     }
@@ -194,6 +188,10 @@
     right: 5%;
     top: 5%;
     }
+/* .Up_pdcont {
+    display: inline-block;
+    position: relative;
+} */
 
 /* footer */
 .footer_gnb {
@@ -211,7 +209,7 @@
 
 /* 0 ~ 768 일떄 */
 @media screen and (max-width: 768px) {
-    .navbar {
+    .row > .navbar {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -286,6 +284,7 @@
 
 /* 0 ~ 460 일떄 */
 @media screen and (max-width: 460px) {
+    #Main_bnr .article,
     #Main_bnr .article {margin-bottom: 10px;}
     #Product .pdt {margin-bottom: 10px;}
     #Up_product .Up_pdt {margin-bottom: 10px;}
