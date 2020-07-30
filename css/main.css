@@ -111,8 +111,14 @@
 }
 
 /* slickslider */
-.slide {
+.slide_list {
     position: relative;
+    white-space: nowrap;
+    margin-bottom: 50px;
+}
+
+.slide > img {
+    text-align: center
 }
 
 .slide > figcaption {
@@ -171,7 +177,7 @@ figcaption {
     -o-border-radius: 50%;
 }
 
-.slick-active > button {
+.slick-dots > li.slick-active > button {
     font-size: 0;
     width: 15px;
     height: 15px;
@@ -375,13 +381,20 @@ address {
 /* 0 ~ 460 일떄 */
 @media screen and (max-width: 460px) {
     #Main_bnr .article {margin-bottom: 1rem;}
+
     #Product .pdt {margin-bottom: 1rem;}
+    .pdt {text-align: center}
+    .pdt_contents {display: inline-block; text-align: left}
+
     #Up_product .Up_pdt {margin-bottom: 1rem;}
+    .Up_pdt {text-align: center}
+    .Up_pdt_contents {display: inline-block; text-align: left}
 
     #footer {
         font-size: smaller;
         text-align: start;
     }
+
     address {
         flex-flow: column wrap;
     }
