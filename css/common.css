@@ -290,8 +290,7 @@ input[type="reset"], input[type="image"], button {
 .col-11 {width: 91.66666667%;}
 .col-12 {width: 100%;}
 .show {display: block;}
-
-.xs-show, .sm-show, .md-show, .lg-show, .hide {display: none;}
+.hide {display: none;}
 
 /* 공통 클래스 */
 .clearfix:after {

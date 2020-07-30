@@ -97,7 +97,7 @@
 #Quick_menu {
     position: fixed;
     top: 50%;
-    right: 20px;
+    right: 10px;
     transform: translateY(-50%);
     font-size: 1.5rem;
     text-align: center;
@@ -111,9 +111,22 @@
 }
 
 /* slickslider */
-#mainBanner {
+.slide {
     position: relative;
 }
+
+.slide > figcaption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+figcaption {
+    text-align: center;
+    font-size: 2rem;
+    color: #fff8e7;}
+
 .slick-arrow {
     position: absolute;
     top: 50%;
@@ -132,18 +145,57 @@
     height: calc(100vh - 50%);
 }
 
+.slick-dots {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 1rem;
+}
+
+.slick-dots > li {
+    display: inline-block;
+    text-align: center;
+    padding: 0 30px;
+}
+
+.slick-dots > li > button {
+    font-size: 0;
+    background: #000000;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.slick-active > button {
+    font-size: 0;
+    width: 15px;
+    height: 15px;
+    background: #fff8e7;
+    border: 1px solid #000000;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
 /* 제목, 기사, 상품 이미지, 버튼 (공통)*/
 
 .title {position: relative;}
 .plus_btn {
-           position: absolute;
-           right: 0px;
-           top: 50%;
-           transform:translateY(-50%) ;
-           -webkit-transform:translateY(-50%) ;
-           -moz-transform:translateY(-50%) ;
-           -ms-transform:translateY(-50%) ;
-           -o-transform:translateY(-50%) ;
+        position: absolute;
+        right: 0px;
+        top: 50%;
+        transform:translateY(-50%) ;
+        -webkit-transform:translateY(-50%) ;
+        -moz-transform:translateY(-50%) ;
+        -ms-transform:translateY(-50%) ;
+        -o-transform:translateY(-50%) ;
         }
 
 .slide_img {
@@ -160,7 +212,7 @@
     margin: 3% 0;
     }
 
-.article, .pdt, {
+.article, .pdt {
     /* border: 1px solid red; */
     position: relative;
     }
@@ -183,6 +235,9 @@
     }
 
 /* 출시상품 */
+.Up_pdt_contents {
+    position: relative;
+}
 .Up_pdt_date {
     position: absolute;
     right: 5%;
@@ -194,22 +249,57 @@
 } */
 
 /* footer */
-.footer_gnb {
+
+#footer {
     display: flex;
-    flex-flow: row nowrap;
-    justify-content: flex-start
-    }
-.footer_gnb_list {
-    flex-basis: 25%;
-}
-.footer_gnb_list li{
-    padding: 10px;
-    margin: 10px;
+    flex-direction: column;
+    margin-top: auto;
+    background: #000000;
+    color: #fff8e7;
 }
 
+.footer_gnb {
+    padding: 1rem 0;
+    border-bottom: 1px solid #fff8e7;
+    }
+.footer_gnb_list {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+}
+.footer_gnb_list li{
+    /* flex-basis: 25%; */
+    padding-right: 20px;
+    /* margin: 10px; */
+}
+
+.footer_gnb_list li a:hover {color: #fff8e7;}
+
+address {
+    padding: 1rem 0;
+    display: flex;
+}
+
+.kream {
+    margin-bottom: 1rem;
+    flex-basis: 70%;
+}
+
+.cs {
+    flex-basis: 30%;
+}
+
+.info {
+    margin: 1rem 0;
+}
+
+.copyright {
+    border-top: 1px solid #fff8e7;
+    padding: 1rem 0;
+}
 /* 0 ~ 768 일떄 */
 @media screen and (max-width: 768px) {
-    .row > .navbar {
+    .navbar {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -284,8 +374,16 @@
 
 /* 0 ~ 460 일떄 */
 @media screen and (max-width: 460px) {
-    #Main_bnr .article,
-    #Main_bnr .article {margin-bottom: 10px;}
-    #Product .pdt {margin-bottom: 10px;}
-    #Up_product .Up_pdt {margin-bottom: 10px;}
+    #Main_bnr .article {margin-bottom: 1rem;}
+    #Product .pdt {margin-bottom: 1rem;}
+    #Up_product .Up_pdt {margin-bottom: 1rem;}
+
+    #footer {
+        font-size: smaller;
+        text-align: start;
+    }
+    address {
+        flex-flow: column wrap;
+    }
 }
+
