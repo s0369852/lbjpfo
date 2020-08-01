@@ -218,14 +218,9 @@ figcaption {
     margin: 3% 0;
     }
 
-.article, .pdt {
-    /* border: 1px solid red; */
-    position: relative;
-    }
-
 /* 메인 베너 */
 .article2 {margin-bottom: 16px;}
-
+.article_contents {position: relative;}
 .article_name {
     position: absolute;
     left: 5%;
@@ -234,6 +229,9 @@ figcaption {
     }
 
 /* 상품 */
+.pdt_contents {
+    position: relative;
+}
 .pdt_list {
     position: absolute;
     left: 5%;
@@ -288,11 +286,11 @@ address {
 
 .kream {
     margin-bottom: 1rem;
-    flex-basis: 70%;
+    flex-basis: 60%;
 }
 
 .cs {
-    flex-basis: 30%;
+    flex-basis: 40%;
 }
 
 .info {
@@ -303,6 +301,7 @@ address {
     border-top: 1px solid #fff8e7;
     padding: 1rem 0;
 }
+
 /* 0 ~ 768 일떄 */
 @media screen and (max-width: 768px) {
     .navbar {
@@ -376,11 +375,22 @@ address {
     }
 
     #Quick_menu {display: none;}
+
+    #footer {
+        font-size: smaller;
+        text-align: start;
+    }
 }
 
 /* 0 ~ 460 일떄 */
 @media screen and (max-width: 460px) {
+
     #Main_bnr .article {margin-bottom: 1rem;}
+    #Main_bnr > .article > img {
+        width: 100%;
+        height: auto;}
+    .article {text-align: center;}
+    .article_contents {display: inline-block; text-align: left;}
 
     #Product .pdt {margin-bottom: 1rem;}
     .pdt {text-align: center}
@@ -389,11 +399,6 @@ address {
     #Up_product .Up_pdt {margin-bottom: 1rem;}
     .Up_pdt {text-align: center}
     .Up_pdt_contents {display: inline-block; text-align: left}
-
-    #footer {
-        font-size: smaller;
-        text-align: start;
-    }
 
     address {
         flex-flow: column wrap;
