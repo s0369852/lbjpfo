@@ -5,28 +5,35 @@ $(function (){
         $(".navbar_logbox").toggleClass("pull")
     });
 
-    $(".slide_list").slick({
+    var basicOption = {
+        slideToShow: 1,
+        slidesToScroll: 1,
         dots: true,
         infinite: true,
         speed: 400,
         fade: true,
         cssEase: "linear"
-    });
+    };
 
-    var slideOption = {
+    $(".slide_list").slick(basicOption);
+
+    var mobileOption = {
         slideToShow: 1,
         slidesToScroll : 1,
         infinite: true,
         speed: 300,
         fade: true,
-        cssEase: "linear"
-    }
+        cssEase: "linear",
+        prevArrow : "<button type='button' class='slick-prev'><i class='xi-angle-left'></button>",
+        nextArrow : "<button type='button' class='slick-next'><i class='xi-angle-right'></button>"
+    };
+
     function mobileSize(){
         var deviceWidth = $(window).width();
         if (deviceWidth <= 460) {
-            $(".slider").slick(slideOption);
+            $(".mobile_slider").slick(mobileOption);
         } else if(deviceWidth > 460) {
-            $(".slider").slick('unslick');
+            $(".mobile_slider").slick('unslick');
         }
     };
     
@@ -34,5 +41,5 @@ $(function (){
     $(window).on("resize",function(){
         clearTimeout(timer)
         timer = setTimeout(mobileSize,300)
-    })
+    });
 });
