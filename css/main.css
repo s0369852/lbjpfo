@@ -16,7 +16,7 @@
     width: 100%;
     justify-content: space-between;
     align-items: center;
-    background: #000000;
+    background: #fff8e7;
 }
 
 /* 로고 */
@@ -28,14 +28,14 @@
     font-family: "Black Han Sans";
     font-size: 2.5rem;
     font-style: italic;
-    color: #fff8e7;
+    color: #000000;
 }
 .navbar_logo span {
     display: block;
     font-family: "Bai Jamjuree";
     font-weight: bold;
     font-size: 0.2rem;
-    color: #fff8e7;
+    color: #000000;
 }
 
 /* 상단 메뉴 */
@@ -54,10 +54,11 @@
 }
 
 .navbar_gnb li:hover {background: #5d5d5d;}
+.navbar_gnb li:hover a {color: #fff8e7;}
 
 .navbar_gnb li a {
     font-family: "Noto Sans KR", sans-serif;
-    color: #fff8e7;
+    color: #000000;
     font-size: 1rem;
 }
 
@@ -72,7 +73,7 @@
     font-size: 1.8rem;
 }
 
-.navbar_logbox li a {color: #fff8e7;}
+.navbar_logbox li a {color: #000000;}
 
 /* 햄버거버튼 */
 #Hbtn {display: none;}
@@ -94,7 +95,7 @@
 }
 
 /* 퀵메뉴 */
-#Quick_menu {
+/* #Quick_menu {
     position: fixed;
     top: 50%;
     right: 10px;
@@ -108,7 +109,7 @@
     display: block;
     padding: 15px;
     color: #333333;
-}
+} */
 
 /* slickslider */
 .slide_list {
@@ -267,30 +268,47 @@ figcaption {
 #footer {
     display: flex;
     flex-direction: column;
+    padding: 40px;
     margin-top: auto;
-    background: #000000;
-    color: #fff8e7;
+    background: #fff8e7
+    color: #3d3d3d;
 }
 
 .footer_gnb {
-    padding: 1rem 0;
-    border-bottom: 1px solid #fff8e7;
+    margin: 1rem 0;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #d1d1d1;
     }
+
 .footer_gnb_list {
     display: flex;
     flex-flow: row nowrap;
     justify-content: flex-start;
 }
-.footer_gnb_list li{
-    /* flex-basis: 25%; */
-    padding-right: 20px;
-    /* margin: 10px; */
+
+.footer_gnb_list li {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    padding-right: 10px;
+    margin-right: 10px;
 }
 
-.footer_gnb_list li a:hover {color: #fff8e7;}
+.footer_gnb_list li:not(:last-child):after {
+    content: '';
+    position: absolute;
+    top: 4px;
+    right: 0;
+    display: inline-block;
+    width: 1px;
+    height: 15px;
+    background: #adadad;
+}
+
+.footer_gnb_list li a:hover {color: #1d1d1d;}
 
 address {
-    padding: 1rem 0;
+    margin: 1rem 0;
     display: flex;
 }
 
@@ -300,16 +318,68 @@ address {
 }
 
 .cs {
+    margin-bottom: 1rem;
     flex-basis: 40%;
+    text-align: right;
+}
+
+.social {display: flex; font-size: 1.6rem; margin: 1rem 0;}
+.sns > h4 {
+    color: #333;
+    font-size: 1rem;
+    margin-left: 30px;
+    line-height: unset;
+}
+.store > h4 {
+    margin-right: 30px;
+    color: #333;
+    font-size: 1rem;
+    line-height: unset;}
+
+.sns {
+    display: flex;
+    flex-basis: 60%;
+    justify-content: flex-end;
+}
+
+.store {
+    display: flex;
+    flex-basis: 40%;
+    justify-content: flex-start;
+}
+
+.sns > ul {
+    display: flex;
+}
+.sns > ul > li {
+    margin-left: 30px;
+}
+
+.store > ul {
+    display: flex;
+}
+
+.store > ul > li {
+    margin-right: 30px;
 }
 
 .info {
-    margin: 1rem 0;
+    display: flex;
+    border-top: 1px solid #d1d1d1;
+    padding-top: 3rem;
+    text-align: center;
+    margin: 2rem 0;
+}
+.info p {
+    flex-basis: 80%;
+    text-align: left;
 }
 
-.copyright {
-    border-top: 1px solid #fff8e7;
-    padding: 1rem 0;
+.info .copyright {
+    display: flex;
+    margin: 1rem 0;
+    flex-basis: 20%;
+    justify-content: flex-end;
 }
 
 /* 0 ~ 768 일떄 */
@@ -323,7 +393,7 @@ address {
 
     .navbar_logo {
         width: 100%;
-        background: #000000;
+        background: #fff8e7;
         z-index: 5;
     }
 
@@ -347,7 +417,7 @@ address {
         flex-flow: column wrap;
         align-items: center;
         position: absolute;
-        background-color: black;
+        background-color: fff8e7;
         width: 100%;
         transition: top 2s cubic-bezier(0, 0.66, 1, 1);
         -webkit-transition: top 2s cubic-bezier(0, 0.66, 1, 1);
@@ -370,7 +440,7 @@ address {
         display: block;
         height: 2px;
         width: 20px;
-        background: #fff8e7;
+        background: #000000;
         margin: 5px 0;
         transition: 0.5s;
         -webkit-transition: 0.5s;
