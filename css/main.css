@@ -1,4 +1,22 @@
 @charset "UTF-8";
+/* .Up_pdt_list > li {
+    height: 40px;
+    font-size: 0;
+}
+
+.Up_pdt_list > li:first-child:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.Up_pdt_list > li:first-child > img {
+    vertical-align: middle;
+}
+.Up_pdt_list p {
+    font-size: 1rem;
+} */
 
 .container {
     margin: 5% 0;
@@ -18,11 +36,12 @@
     align-items: center;
 }
 
+
 /* 로고 */
 .navbar_logo {
     flex-basis: 30%;
     width: 100%;
-    padding: 20px 20px;
+    padding: 1.4286rem 1.4286rem;
 }
 
 /* 상단 메뉴 */
@@ -30,16 +49,16 @@
 .navbar_gnb_list {
     display: flex;
     justify-content: center;
-    padding: 10px 0;
+    padding: 0.7143rem 0;
 }
 
 .navbar_gnb li {
-    padding: 6px 16px;
-    margin: 0 12px;
+    padding: 0.4286rem 1.1429rem;
+    margin: 0 0.8571rem;
     border: 2px solid #333333;
-    border-radius: 12px;
+    border-radius: 0.8571rem;
     text-align: center;
-    width: 100px;
+    width: 7.1429rem;
 }
 
 .navbar_gnb li:hover {background: #5d5d5d;}
@@ -176,7 +195,7 @@ figcaption {
 
 .slick-dots > li.slick-active > button {
     font-size: 0;
-    width: 18px;
+    width: 19px;
     height: 10px;
     background: #ffffff;
     border: 1px solid #5d5d5d;
@@ -299,15 +318,20 @@ figcaption {
 }
 
 /* 쇼룸슬라이드 */
-#Room_slide figure.slide {
-    width: 100%;
-    height: 0;
-    padding-bottom: calc(600 / 960 * 100%);
+#Room_slide figure.slide img {
+    width: 100vw;
 }
 
-#Room_slide figure.slide1 {background: url(/image/showroom/KREAM-opens-offline-showroom.jpg) no-repeat center center fixed; background-size: contain;}
-#Room_slide figure.slide2 {background: url(/image/showroom/KREAM-opens-offline-showroom-2.jpg) no-repeat center center fixed; background-size: contain;}
-#Room_slide figure.slide3 {background: url(/image/showroom/KREAM-opens-offline-showroom-3.jpg) no-repeat center center fixed; background-size: contain;}
+#Room_slide figure.slide {
+    /* width: 100vw;
+    text-align: center
+    height: 0; */
+    /* padding-bottom: calc(600 / 960 * 100%); */
+}
+
+/* #Room_slide figure.slide1 {background: url(/image/showroom/showroom1.jpg) no-repeat center center fixed; background-size: contain;}
+#Room_slide figure.slide2 {background: url(/image/showroom/showroom2.jpg) no-repeat center center fixed; background-size: contain;}
+#Room_slide figure.slide3 {background: url(/image/showroom/showroom3.jpg) no-repeat center center fixed; background-size: contain;} */
 
 
 /* footer */
@@ -430,6 +454,7 @@ address {
 
 /* 0 ~ 768 일떄 */
 @media screen and (max-width: 768px) {
+    html,body {font-size: 13px;}
     .navbar {
         display: flex;
         flex-direction: column;
@@ -520,7 +545,9 @@ address {
         -ms-transform: rotate(45deg) translateY(-10px);
         -o-transform: rotate(45deg) translateY(-10px);
     }
-
+    #Room_slide .wrapper {
+        width: 100%;
+    }
     #Quick_menu {display: none;}
 
     #footer {
@@ -531,7 +558,8 @@ address {
 
 /* 0 ~ 460 일떄 */
 @media screen and (max-width: 460px) {
-
+    br {display: none;}
+    html,body {font-size: 11px;}
     #Main_bnr .article {margin-bottom: 1rem;}
     #Main_bnr > .article > img {
         width: 100%;
@@ -603,6 +631,4 @@ address {
     .info p.copyright {
         display: block;
         text-align: center;
-    }
-
     }
