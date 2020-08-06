@@ -55,11 +55,6 @@ fieldset, img {
     display: inline-block;
     vertical-align: top;
     max-width: 100%;
-    border-radius: 20px;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    -ms-border-radius: 20px;
-    -o-border-radius: 20px;
 }
 
 dl, ul, ol, menu, li {

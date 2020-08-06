@@ -209,6 +209,14 @@ figcaption {
         -o-transform:translateY(-50%) ;
         }
 
+.article_img, .pdt_img, .Up_pdt_img {
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
 .slide_img {
     border-radius:0 ;
     -webkit-border-radius:0 ;
@@ -233,9 +241,41 @@ figcaption {
     color: #8d8d8d;
     }
 
+.article1 ul.article_name h3 {
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+.article2 ul.article_name h3 {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #b0110e;
+}
+.article2 ul.article_name p {
+    color: #000;
+}
+
+
+.article3 ul.article_name h3 {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #ea5191;
+}
+.article4 ul.article_name h3 {
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+
 /* 상품 */
 .pdt_contents {
     position: relative;
+}
+.pdt_logo {
+    border-radius: none;
+    -webkit-border-radius: none;
+    -moz-border-radius: none;
+    -ms-border-radius: none;
+    -o-border-radius: none;
 }
 .pdt_list {
     position: absolute;
@@ -247,11 +287,16 @@ figcaption {
 .Up_pdt_contents {
     position: relative;
 }
+
 .Up_pdt_date {
     position: absolute;
     right: 5%;
     top: 5%;
     }
+
+.Up_pdt_list {
+    margin-top: 10%;
+}
 
 /* 쇼룸슬라이드 */
 #Room_slide figure.slide {
@@ -509,6 +554,7 @@ address {
     .mobile_slider button {
         display: inline-block;
         position: absolute;
+        z-index: 10;
         font-size: 2rem;
         color: #000000;
         -webkit-transform: translateY(-50%);
