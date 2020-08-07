@@ -20,7 +20,6 @@ $(function (){
     var mobileOption = {
         slideToShow: 1,
         slidesToScroll : 1,
-        dots: true,
         infinite: true,
         speed: 300,
         fade: true,

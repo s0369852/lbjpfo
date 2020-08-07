@@ -127,7 +127,7 @@ h2 {
 }
 
 h3 {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-family: "Noto Sans KR", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     color: #fff8e7;;
 }
@@ -230,12 +230,12 @@ input[type="reset"], input[type="image"], button {
     height: 12px;
     margin-right: 8px;
     border: 1px solid #727272;
-    -webkit-border-radius: ;
-    -moz-border-radius: ;
-    border-radius: 50%;
     vertical-align: middle;
-    -ms-border-radius: ;
-    -o-border-radius: ;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
 }
 
 .radio:checked + label > span:after {
@@ -246,12 +246,12 @@ input[type="reset"], input[type="image"], button {
     bottom: 2px;
     left: 2px;
     height: auto;
-    -webkit-border-radius: ;
-    -moz-border-radius: ;
-    border-radius: 50%;
     background-color: #727272;
-    -ms-border-radius: ;
-    -o-border-radius: ;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
 }
 
 /* 그리드 시스템 */

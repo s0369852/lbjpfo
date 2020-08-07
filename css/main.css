@@ -1,22 +1,4 @@
 @charset "UTF-8";
-/* .Up_pdt_list > li {
-    height: 40px;
-    font-size: 0;
-}
-
-.Up_pdt_list > li:first-child:before {
-    content: '';
-    display: inline-block;
-    height: 100%;
-    vertical-align: middle;
-}
-
-.Up_pdt_list > li:first-child > img {
-    vertical-align: middle;
-}
-.Up_pdt_list p {
-    font-size: 1rem;
-} */
 
 .container {
     margin: 5% 0;
@@ -131,6 +113,35 @@ figcaption {
     font-size: 2rem;
     color: #fff8e7;}
 
+#Product_slide li:nth-child(1) figcaption {
+    padding: 0 2rem;
+    background: rgba(120,1,15,.4);
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+}
+#Product_slide li:nth-child(2) figcaption {
+    padding: 0 1rem;
+    background: rgba(77,67,77,.3);
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+}
+
+#Product_slide li:nth-child(3) figcaption {
+    padding: 0 1rem;
+    background: rgba(54,54,54,.4);
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+}
+
 .slide_list button.slick-arrow {
     position: absolute;
     top: 50%;
@@ -140,7 +151,7 @@ figcaption {
     width: 50px;
     height: 50px;
     border-radius: 25%;
-    background: rgba(0,0,0,.3);
+    background: rgba(0,0,0,.2);
     -webkit-border-radius: 25%;
     -moz-border-radius: 25%;
     -ms-border-radius: 25%;
@@ -251,14 +262,17 @@ figcaption {
     }
 
 /* 메인 베너 */
-.article2 {margin-bottom: 16px;}
+
 .article_contents {position: relative;}
+
 .article_name {
     position: absolute;
     left: 5%;
     bottom: 5%;
     color: #8d8d8d;
     }
+
+.article2 {margin-bottom: 16px;}
 
 .article1 ul.article_name h3 {
     font-size: 1.5rem;
@@ -288,7 +302,18 @@ figcaption {
 /* 상품 */
 .pdt_contents {
     position: relative;
+    overflow: hidden;
 }
+
+.pdt_contents:hover .pdt_list {
+    left: 5%;
+    transition: left 0.8s cubic-bezier(0.02, 0.53, 1, 1);
+    -webkit-transition: left 0.8s cubic-bezier(0.02, 0.53, 1, 1);
+    -moz-transition: left 0.8s cubic-bezier(0.02, 0.53, 1, 1);
+    -ms-transition: left 0.8s cubic-bezier(0.02, 0.53, 1, 1);
+    -o-transition: left 0.8s cubic-bezier(0.02, 0.53, 1, 1);
+}
+
 .pdt_logo {
     border-radius: none;
     -webkit-border-radius: none;
@@ -298,9 +323,36 @@ figcaption {
 }
 .pdt_list {
     position: absolute;
-    left: 5%;
+    left: 100%;
     bottom: 5%;
+    width: 400px;
+    padding: 10px;
+    border-radius: 10px;
+    background: rgba(255,255,255,.4);
     }
+
+.pdt_list .pdt_price {
+    text-shadow: 2px 2px 2px rgba(0,0,0,.5);
+}
+
+.pdt_list > li:first-child {
+    height: 40px;
+    font-size: 0;
+}
+
+.pdt_list .pdt_logo:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.pdt_list .pdt_logo {
+    vertical-align: middle;
+}
+.pdt_name {
+    font-size: 1rem;
+}
 
 /* 출시상품 */
 .Up_pdt_contents {
@@ -314,7 +366,26 @@ figcaption {
     }
 
 .Up_pdt_list {
-    margin-top: 10%;
+    margin-top: 5%;
+}
+
+.Up_pdt_list > li:first-child {
+    height: 40px;
+    font-size: 0;
+}
+
+.Up_pdt_list > li:first-child:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.Up_pdt_list > li:first-child > img {
+    vertical-align: middle;
+}
+.Up_pdt_list p {
+    font-size: 1rem;
 }
 
 /* 쇼룸슬라이드 */
@@ -322,17 +393,15 @@ figcaption {
     width: 100vw;
 }
 
-#Room_slide figure.slide {
-    /* width: 100vw;
-    text-align: center
-    height: 0; */
-    /* padding-bottom: calc(600 / 960 * 100%); */
+#Room_slide .slide_list figcaption {
+    padding: 0 1rem;
+    background: rgb(0,0,0,.4);
+    border-radius: 7px;
 }
 
-/* #Room_slide figure.slide1 {background: url(/image/showroom/showroom1.jpg) no-repeat center center fixed; background-size: contain;}
-#Room_slide figure.slide2 {background: url(/image/showroom/showroom2.jpg) no-repeat center center fixed; background-size: contain;}
-#Room_slide figure.slide3 {background: url(/image/showroom/showroom3.jpg) no-repeat center center fixed; background-size: contain;} */
-
+#Room_slide .slide_list figcaption p:last-child {
+    font-size: 0.8em;
+}
 
 /* footer */
 
@@ -455,6 +524,8 @@ address {
 /* 0 ~ 768 일떄 */
 @media screen and (max-width: 768px) {
     html,body {font-size: 13px;}
+    figcaption {font-size: 1.5rem;}
+
     .navbar {
         display: flex;
         flex-direction: column;
@@ -497,8 +568,8 @@ address {
         -ms-transition: top 2s cubic-bezier(0, 0.66, 1, 1);
         -o-transition: top 2s cubic-bezier(0, 0.66, 1, 1);
 }
-.navbar_gnb.pull {top: 93%; height: 197px; z-index: 2;}
-.navbar_logbox.pull {top: 210%; height: 100px; z-index: 1;}
+.navbar_gnb.pull {top: 93%; height: 185px; z-index: 2;}
+.navbar_logbox.pull {top: 205%; height: 85px; z-index: 1;}
 
     #Hbtn {
         display: block;
@@ -511,17 +582,22 @@ address {
     #Hbtn span {
         display: block;
         height: 2px;
-        width: 20px;
+        width: 25px;
         background: #000000;
         margin: 5px 0;
+        border-radius: 20px;
         transition: 0.5s;
         -webkit-transition: 0.5s;
         -moz-transition: 0.5s;
         -ms-transition: 0.5s;
         -o-transition: 0.5s;
-    }
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+}
     #Hbtn.act span:first-child {
-        width: 25px;
+        width: 30px;
         transform: rotate(-45deg) translateY(10px);
         -webkit-transform: rotate(-45deg) translateY(10px);
         -moz-transform: rotate(-45deg) translateY(10px);
@@ -538,16 +614,38 @@ address {
 
     }
     #Hbtn.act span:last-child {
-        width: 25px;
+        width: 30px;
         transform: rotate(45deg) translateY(-10px);
         -webkit-transform: rotate(45deg) translateY(-10px);
         -moz-transform: rotate(45deg) translateY(-10px);
         -ms-transform: rotate(45deg) translateY(-10px);
         -o-transform: rotate(45deg) translateY(-10px);
     }
+
+    /* .article1 .article_name p {
+        width: 250px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    } */
+
+    .pdt_list {
+        position: absolute;
+        left: 5%;
+        bottom: 5%;
+        width: 400px;
+        padding: 10px;
+        border-radius: 10px;
+        }
+    
+    .pdt_list .pdt_price {
+        text-shadow: 2px 2px 2px rgba(0,0,0,.5);
+    }
+
     #Room_slide .wrapper {
         width: 100%;
     }
+
     #Quick_menu {display: none;}
 
     #footer {
@@ -558,8 +656,11 @@ address {
 
 /* 0 ~ 460 일떄 */
 @media screen and (max-width: 460px) {
+    html,body {font-size: 12px;}
+    figcaption {font-size: 1rem;}
+
     br {display: none;}
-    html,body {font-size: 11px;}
+
     #Main_bnr .article {margin-bottom: 1rem;}
     #Main_bnr > .article > img {
         width: 100%;
@@ -567,13 +668,21 @@ address {
     .article {text-align: center;}
     .article_contents {display: inline-block; text-align: left;}
 
+    .slide_list .slick-arrow {
+        visibility: hidden;
+    }
+
     #Product .pdt {margin-bottom: 1rem;}
     .pdt {text-align: center}
     .pdt_contents {display: inline-block; text-align: left}
 
+
     #Up_product .Up_pdt {margin-bottom: 1rem;}
     .Up_pdt {text-align: center}
     .Up_pdt_contents {display: inline-block; text-align: left}
+    .slick-slide img {
+        display: inline-block;
+    }
 
     .mobile_slider {
         position: relative;
@@ -585,11 +694,12 @@ address {
         z-index: 10;
         font-size: 2rem;
         color: #000000;
+        transform: translateY(-50%);
         -webkit-transform: translateY(-50%);
         -moz-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
         -o-transform: translateY(-50%);
-    }
+}
 
     .mobile_slider .slick-prev {
         top: 50%;
@@ -632,3 +742,4 @@ address {
         display: block;
         text-align: center;
     }
+}
