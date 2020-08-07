@@ -277,12 +277,17 @@ figcaption {
 .article1 ul.article_name h3 {
     font-size: 1.5rem;
     font-weight: 800;
+    text-shadow: 2px 2px 1px rgba(0,0,0,.3);
 }
+
 .article2 ul.article_name h3 {
     font-size: 1.5rem;
     font-weight: 800;
     color: #b0110e;
+    text-shadow: 2px 2px 1px rgb(0,0,0,.4);
 }
+
+
 .article2 ul.article_name p {
     color: #000;
 }
@@ -292,10 +297,12 @@ figcaption {
     font-size: 1.5rem;
     font-weight: 800;
     color: #ea5191;
+    text-shadow: 2px 2px 1px rgba(0,0,0,.3);
 }
 .article4 ul.article_name h3 {
     font-size: 1.5rem;
     font-weight: 800;
+    text-shadow: 2px 2px 1px rgba(0,0,0,.3);
 }
 
 
@@ -397,6 +404,7 @@ figcaption {
     padding: 0 1rem;
     background: rgb(0,0,0,.4);
     border-radius: 7px;
+    font-family: "Bai Jamjuree"
 }
 
 #Room_slide .slide_list figcaption p:last-child {
