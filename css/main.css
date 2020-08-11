@@ -70,6 +70,43 @@
 /* 햄버거버튼 */
 #Hbtn {display: none;}
 
+/* 발매정보 */
+.top_nav p{
+    display: inline-block;
+}
+
+.calendar {
+    max-width: 1200px;
+    overflow: hidden;
+    position: relative;
+}
+
+.calendar > button {
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.prev_btn {left: 10px;}
+.next_btn {right: 10px;}
+
+.calendar_date {
+    width: 5000px;
+}
+
+.calendar div {
+    display: inline-block;
+    margin: 10px 30px;
+}
+
+.month, .day {
+    width: 50px;
+    text-align: center;
+}
+
+
+
 /* 이벤트 베너 (youtube) */
 .video {
     width: 100%; 
