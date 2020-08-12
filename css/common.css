@@ -75,6 +75,7 @@ input, select, textarea, button {
     vertical-align: middle;
     border: 0;
     background: transparent;
+    outline: none;
 }
 
 label {

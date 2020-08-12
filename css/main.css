@@ -21,16 +21,15 @@
 
 /* 로고 */
 .navbar_logo {
-    flex-basis: 30%;
+    flex-basis: 35%;
     width: 100%;
     padding: 1.4286rem 1.4286rem;
 }
 
 /* 상단 메뉴 */
-.navbar_gnb {flex-basis: 40%;}
+.navbar_gnb {flex-basis: 35%;}
 .navbar_gnb_list {
     display: flex;
-    justify-content: center;
     padding: 0.7143rem 0;
 }
 
@@ -70,13 +69,19 @@
 /* 햄버거버튼 */
 #Hbtn {display: none;}
 
-/* 발매정보 */
+/* Top_nav */
+#Top_nav {
+    margin: 1% auto;
+}
+
+/* 발매정보 페이지 */
 .top_nav p{
     display: inline-block;
 }
 
 .calendar {
     max-width: 1200px;
+    padding: 0 3%;
     overflow: hidden;
     position: relative;
 }
@@ -95,7 +100,7 @@
     width: 5000px;
 }
 
-.calendar div {
+.calendar_date li {
     display: inline-block;
     margin: 10px 30px;
 }
@@ -104,8 +109,6 @@
     width: 50px;
     text-align: center;
 }
-
-
 
 /* 이벤트 베너 (youtube) */
 .video {
@@ -342,6 +345,19 @@ figcaption {
     text-shadow: 2px 2px 1px rgba(0,0,0,.3);
 }
 
+.toggle_show {
+    display: none;
+    margin: 16px auto;
+}
+
+.toggle_show.visible {
+    display: block;
+}
+
+.article5 {
+    margin-bottom: 16px;
+}
+
 
 /* 상품 */
 .pdt_contents {
@@ -489,7 +505,10 @@ figcaption {
     background: #adadad;
 }
 
-.footer_gnb_list li a:hover {color: #b2100f;}
+.footer_gnb_list li a:hover {
+    color: #b2100f;
+    cursor: pointer;
+}
 
 address {
     margin: 1rem 0;

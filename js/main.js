@@ -5,6 +5,11 @@ $(function (){
         $(".navbar_logbox").toggleClass("pull")
     });
 
+    $("#showbtn").click(function(){
+        $(".toggle_show").slideToggle("visible",function(){
+        })
+    });
+
     var basicOption = {
         slideToShow: 1,
         slidesToScroll: 1,
