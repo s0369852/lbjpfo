@@ -5,9 +5,15 @@ $(function (){
         $(".navbar_logbox").toggleClass("pull")
     });
 
+    $(".toggle_show").slideUp(0);
     $("#showbtn").click(function(){
-        $(".toggle_show").slideToggle("visible",function(){
-        })
+        $(".toggle_show").slideToggle(1500,function(){
+        });
+    });
+
+    $(".day_num").click(function(){
+        $(".day_num").removeClass('actday');
+        $(this).addClass('actday');
     });
 
     var basicOption = {

@@ -9,6 +9,14 @@
     margin: 0 auto;
 }
 
+.active {
+    background-color: #5d5d5d;
+}
+
+.navbar_gnb_list .active  a {
+    color: #fff;
+}
+
 /* 헤더 */
 .navbar {
     display: flex;
@@ -17,7 +25,6 @@
     justify-content: space-between;
     align-items: center;
 }
-
 
 /* 로고 */
 .navbar_logo {
@@ -255,9 +262,8 @@ figcaption {
     }
 
 .Mbtn {
-    display: flex;
-    justify-content: center;
-    margin: 3% 0;
+    margin: 2% 0;
+    text-align: center;
     }
 
 /* 메인 베너 */
@@ -304,19 +310,14 @@ figcaption {
     text-shadow: 2px 2px 1px rgba(0,0,0,.3);
 }
 
-.toggle_show {
-    display: none;
-    margin: 16px auto;
-}
-
-.toggle_show.visible {
-    display: block;
-}
-
 .article5 {
     margin-bottom: 16px;
 }
 
+.toggle_show {
+    max-height: 803px;
+    margin: 16px auto;
+}
 
 /* 상품 */
 .pdt_contents {
@@ -816,6 +817,22 @@ address {
 .month, .day {
     width: 50px;
     text-align: center;
+}
+
+.day_num {
+    margin: 0 auto;
+    width: 50%;
+    height: 50%;
+}
+
+.day_num:hover {
+    background-color: #BFBFBF;
+    border-radius: 100%;
+}
+
+.actday {
+    background-color: #BFBFBF;
+    border-radius: 50%;
 }
 
 .Up_pdt_list p {
