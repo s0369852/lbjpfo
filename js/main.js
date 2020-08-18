@@ -53,4 +53,5 @@ $(function (){
         clearTimeout(timer)
         timer = setTimeout(mobileSize,300)
     });
+
 });

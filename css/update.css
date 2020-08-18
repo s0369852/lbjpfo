@@ -1,4 +1,6 @@
 /* 발매정보 페이지 */
+
+/* 발매일(달력) */
 .calendar {
     max-width: 1200px;
     padding: 0 3%;
@@ -22,7 +24,7 @@
 
 .calendar_date li {
     display: inline-block;
-    margin: 10px 30px;
+    margin: 10px 25px;
 }
 
 .month, .day {
@@ -36,7 +38,7 @@
     height: 50%;
 }
 
-.day_num:hover {
+.day:hover .day_num {
     background-color: #BFBFBF;
     border-radius: 100%;
 }
@@ -45,6 +47,16 @@
     background-color: #BFBFBF;
     border-radius: 50%;
 }
+
+/* .prev_actbtn {
+    margin-left: -100px;
+}
+
+.next_actbtn {
+    margin-right: 50px;
+} */
+
+/* 발매리스트 */
 
 .Up_pdt_list p {
     font-size: 1rem;
