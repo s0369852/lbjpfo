@@ -11,6 +11,10 @@ $(function (){
         });
     });
 
+    $(".bookmark").click(function(){
+        $(this).toggleClass("changecolor")
+    });
+
     $(".day_num").click(function(){
         $(".day_num").removeClass('actday');
         $(this).addClass('actday');
